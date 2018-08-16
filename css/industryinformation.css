@@ -1,0 +1,49 @@
+.content {
+    width: 100%;
+    background: #F6F6F6;
+}
+.content .formation {
+    width: 1200px;
+    height: 910px;
+    margin: 44px auto 118px auto;
+}
+.content .catalogue {
+    float: left;
+    width: 248px;
+    background: #ECF5D8;
+    color: #809556;
+}
+.content .catalogue li {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    padding-left: 82px;
+}
+.content .catalogue li::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    left: 16px;
+    top: 8px;
+}
+.content .catalogue li.home::before {
+    background: url(../images/icon/menu.png) 0px -326px no-repeat;
+}
+.content .catalogue li.school::before {
+    background: url(../images/icon/menu.png) 0px -43px no-repeat;
+}
+.content .catalogue li.money::before {
+    background: url(../images/icon/menu.png) 0px -132px no-repeat;
+}
+.content .catalogue li.policy::before {
+    background: url(../images/icon/menu.png) 0px -228px no-repeat;
+}
+.content .catalogue li.economics::before {
+    background: url(../images/icon/menu.png) 0px -424px no-repeat;
+}
+.content .infolist {
+    float: right;
+    width: 928px;
+}

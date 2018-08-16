@@ -1,0 +1,147 @@
+.content {
+	width: 1200px;
+	height: 1750px;
+	background: #fff;
+	margin: 0 auto;
+	margin-top: 24px;
+}
+.content .filter {
+	height: 180px;
+	width: 100%;
+	padding: 10px 0;
+	font-size: 18px;
+}
+.content .filter .area{
+	position: relative;
+	height: 60px;
+	line-height: 60px;
+}
+.content .filter .area .trait {
+	display: inline-block;
+	width: 120px;
+	height: 100%;
+	text-align: center;
+	vertical-align: top;
+	color: #6B8643;
+	font-weight: 700;
+}
+.content .filter .area .product {
+	position: relative;
+	display: inline-block;
+}
+.content .filter .area ul li {
+	display: inline-block;
+}
+.content .filter .trait::after {
+	content:'';
+	position: absolute;
+	top: 24px;
+	left: 120px;
+	width: 28px;
+	height: 15px;
+	background: url(../images/icon/bottom.png) center center no-repeat;
+}
+.content .filter .product .classify {
+	max-width: 938px;
+    word-break: break-all;
+    word-wrap: break-word;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+    margin-left: 60px;
+    margin-top: 9px;
+    height: 60px;
+}
+.content .filter .product .classify li:hover {
+	border: 1px solid #FAD94E;
+}
+.content .filter .product li {
+	width: 66px;
+	height: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	line-height: 30px;
+	text-align: center;
+	margin-right: 22px;
+	border: 1px solid #fff;
+}
+.content .filter .product .pd {
+	margin-right: 32px;
+}	
+.content .filter .product .classify li.active  {
+	border: 1px solid #FAD94E;
+}
+.content .newproduct {
+	height: 70px;
+	line-height: 70px;
+	width: 100%;
+	background: #E5E3E3;
+	font-size: 18px;
+}
+.content .newproduct p {
+	float: left;
+	padding-left: 36px;
+}
+.content .newproduct .page {
+	float: right;
+	padding-right: 36px;
+}
+.content .variety {
+	overflow: hidden;
+	height: 1460px;
+}
+.content .variety li {
+	height: 60px;
+}
+.content .variety li.wire {
+	border-bottom: 2px solid #809556;
+}
+.content .variety li.dashed {
+	margin: 0 10px;
+	border-bottom: 1px dashed #DDDDDD;
+}
+.content .variety li div {
+	displaY: inline-block;
+	height: 60px;
+	line-height: 60px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+.content .variety .breed {
+	width: 298px;
+	padding-left: 38px;
+}
+.content .variety li.dashed .breed{
+	padding-left: 28px;
+}
+.content .variety .region {
+	width: 242px;
+} 
+.content .variety .person {
+	width: 234px;
+} 
+.content .variety .time {
+	width: 170px;
+} 
+.content .variety .detail {
+	width: 152px;
+	height: 40px;
+	background: #FAD94E;
+	color: #fff;
+	border-radius: 20px;
+	text-align: center;
+	line-height: 40px;
+}
+.paging {
+	width: 1200px;
+	margin: 0 auto;
+}
+.page_div {
+	width: 1200px;
+	margin-top: 84px;
+	margin-bottom: 280px;
+	text-align: center;
+}

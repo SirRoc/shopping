@@ -1,0 +1,256 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background: #F6F6F6;
+}
+
+.container .banner {
+    width: 100%;
+    height: 420px;
+}
+
+.banner {
+    position: relative;
+    height: 420px;
+    overflow: auto;
+    text-align: center;
+}
+
+.banner li {
+    list-style: none;
+}
+
+.banner ul li {
+    float: left;
+}
+
+.banner .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+}
+
+.banner .dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: .4;
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+
+.banner .dots li.active {
+    background: #fff;
+    opacity: 1;
+}
+
+.banner .arrow {
+    position: absolute;
+    top: 200px;
+}
+
+.banner #al {
+    left: 15px;
+}
+
+.banner #ar {
+    right: 15px;
+}
+
+.product {
+    width: 1200px;
+    height: 400px;
+    font-size: 0;
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+.product .productbg {
+    display: inline-block;
+    width: 270px;
+    height: 100%;
+    background: url(../images/bg/shoppingbg.png) center center no-repeat;
+    vertical-align: top;
+}
+.product .provision {
+    margin-left: 23px;
+}
+.product .productname {
+    display: inline-block;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.product .provision, .product .procurement {
+    display: inline-block;
+    width: 442px;
+    height: 100%;
+    background: #fff;
+    vertical-align: top;
+}
+.provision .title {
+    position: relative;
+    font-size: 24px;
+    height: 56px;
+    line-height: 56px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.provision .title::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 40px;
+    top: 8px;
+    background: #D3E7A4;
+}
+.provision p {
+    display: inline-block;
+    padding-left: 24px;
+    font-weight: 700;
+}
+.icon-more {
+    float: right;
+    margin-top: 13px;
+    margin-right: 16px;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    background: url(../images/icon/more.png) center center no-repeat;
+}
+.provision ul {
+    font-size: 18px;
+    color: #707070;
+    margin: 0 14px;
+    height: 342px;
+    overflow: hidden;
+}
+.provision ul li {
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px dashed #999999;
+}
+.provision ul li .time {
+    padding-left: 10px;
+    padding-right: 16px;
+    vertical-align: top;
+}
+.provision ul li .price {
+   float: right;
+   color: #FF3333;
+   padding-right: 10px;
+}
+.message {
+    width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    margin: 30px 0 162px 0;
+}
+.message .title {
+    height: 84px;
+    line-height: 84px;
+    border-bottom: 4px solid #D3E7A4;
+    margin-bottom: 30px;
+}
+.message .title h4 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+    font-weight: 400;
+}
+.message .title .icon-more {
+    margin-top: 27px;
+}
+.message .icon-message {
+    display: inline-block;
+    width: 36px;
+    height: 40px;
+    padding-left: 36px;
+    vertical-align: middle;
+    background: url(../images/icon/messgae.png) center center no-repeat;
+}
+.message .information {
+    padding-bottom: 30px;
+    height: 220px;
+    font-size: 0;
+}
+.information .bg {
+    float: left;
+    width: 270px;
+    height: 100%;
+    background: #ccc;
+    margin-right: 36px;
+}
+.information .icon-school {
+    background: url(../images/bg/school.png) center center no-repeat;
+}
+.information .icon-becomerich {
+    background: url(../images/bg/becomerich.png) center center no-repeat;
+}
+.information .icon-policy {
+    background: url(../images/bg/policy.png) center center no-repeat;
+}
+.information .icon-economics {
+    background: url(../images/bg/economics.png) center center no-repeat;
+}
+.information .special {
+    float: right;
+    width: 877px;
+}
+.information .special h2 {
+    width: 830px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 24px;
+    padding-bottom: 26px;
+}
+.information .special .Projectreview {
+    font-size: 16px;
+    line-height: 28px;
+    border-bottom: 1px dashed #999999;
+    padding-bottom: 6px;
+    padding-right: 36px;
+    margin-right: 18px;
+}
+
+.information .special ul {
+    margin-top: 18px;
+}
+.information .special li {
+    font-size: 18px;
+    margin-bottom: 12px;
+    height: 14px;
+}
+.information .special li p {
+    position: relative;
+    float: left;
+    padding-left: 36px;
+    width: 720px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.information .special li p::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+    background: #FAD94E;
+
+}
+.information .special li .time {
+    float: right;
+    font-size: 18px;
+    color: #DDDDDD;
+    padding-right: 18px;
+}

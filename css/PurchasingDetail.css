@@ -1,0 +1,224 @@
+.content {
+    height: 2180px;
+    width: 100%;
+    background: #F6F6F6;
+}
+.content .product {
+    width: 1200px;
+    height: 440px;
+    margin: 0 auto;
+}
+.content .product .personInfo {
+    height: 68px;
+    width: 100%;
+    line-height: 68px;
+    margin-top: 26px;
+    background: #FAFAFA;
+    font-size: 0;
+}
+.content .product .personInfo > div{
+    display: inline-block;
+    font-size: 18px;
+}
+.content .product .personInfo > div > span {
+    font-weight: 700;
+}
+.content .product .releaseTime {
+    width: 304px;
+    height: 100%;
+    padding-left: 36px;
+}
+.content .product .releaseTime > span {
+    display: inline-block;
+    width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: top;
+}
+.content .product .viewnumber {
+    width: 224px;
+    height: 100%;
+}
+.content .product .viewnumber > span {
+    display: inline-block;
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: top;
+}
+.content .product .releasePerson{ 
+    position: relative;
+    width: 550px;
+    height: 100%;
+}
+.content .product .releasePerson>span {
+    display: inline-block;
+    width: 76px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: top;
+}
+.content .product .releasePerson::after{
+    content: '';
+    position: absolute;
+    left: 152px;
+    top: 16.5px;
+    width: 46px;
+    height: 35px;
+    background: url(../images/icon/license.png) center center no-repeat;
+}
+.content .product .collect{ 
+    position: relative;
+    width: 86px;
+    height: 100%;
+    color: #FF0000;
+    
+}
+.content .product .collect .icon-collect {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 22px;
+    left: -32px;
+    background: url(../images/icon/nocollect.png) center center no-repeat;
+}
+.content .detail {
+    width: 1200px;
+    height: 360px;
+    margin-top: 10px;
+}
+.content .detail .purchaseing {
+    float: left;
+    width: 800px;
+    height: 100%;
+    background: #fff;
+}
+.content .detail .purchaseInfo {
+    float: right;
+    width: 390px;
+    height: 100%;
+    background: #fff;
+}
+.content .detail .purchaseing .purchaseAwait {
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
+    padding-left: 36px;
+    font-size: 24px;
+    
+}
+.content .detail .purchaseing .classify {
+    vertical-align: middle;
+}
+.content .detail .purchaseing .icon-await {
+    display: inline-block;
+    width: 26px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    padding: 0 8px 0 14px;
+    background: url(../images/icon/await.png) center center no-repeat;
+}
+.content .detail .purchaseing .awaiting {
+    font-size: 18px;
+    color: #FF0000;
+}
+.content .detail .information .productdesc {
+    display: inline-block;
+    width: 96px;
+    height: 36px;
+    padding-left: 36px;
+}
+.content .detail .information .productdetail {
+    display: inline-block;
+    width: 285px;
+    height: 100%;
+}
+.content .detail .information .productnum {
+    display: inline-block;
+    width: 128px;
+    height: 100%;
+}
+.content .detail .purchaseing .fontweight {
+    display: inline-block;
+    width: 196px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 700;
+}
+.content .detail .information .productdetail {
+    width: 285px;
+}
+.content .detail .lasttime {
+    height: 70px;
+    line-height: 70px;
+    font-weight: 700;
+    color: #FF0000;
+}
+.content .detail .time {
+    vertical-align: middle;
+}
+.content .detail .icon-lasttime {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    width: 26px;
+    margin-left: 36px;
+    margin-right: 18px;
+    background: url(../images/icon/time.png) center center no-repeat;
+    vertical-align: middle;
+   
+}
+.content .purchaseInfo .info {
+    height: 100px;
+    line-height: 100px;
+    font-size: 18px;
+    padding-left: 30px;
+    color: #666666;
+}
+.content .purchaseInfo .name {
+    position: relative;
+    font-size: 20px;
+    height: 48px;
+    padding-left: 76px;
+}
+.content .purchaseInfo .name::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -4px;
+    width: 24px;
+    height: 28px;
+    background: url(../images/icon/person.png) center center no-repeat;
+}
+.content .purchaseInfo .city {
+    width: 310px;
+    height: 48px;
+    position: relative;
+    font-size: 20px;
+    padding-left: 76px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.content .purchaseInfo .city::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -4px;
+    width: 24px;
+    height: 30px;
+    background: url(../images/icon/address.png) center center no-repeat;
+}
+.content .purchaseInfo .tip {
+    height: 138px;
+    margin: 24px 16px 0 16px;
+    border-top: 1px dashed #DDDDDD;
+    padding: 28px 26px 0 20px;
+    line-height: 22px;
+}
