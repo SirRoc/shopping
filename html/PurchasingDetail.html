@@ -11,6 +11,10 @@
   <!--IE10-->
   <meta http-equiv="X-UA-Compatible" content="IE=8,IE=9,IE=10"/>
   <meta name=”renderer” content=”webkit|ie-comp|ie-stand”/>
+  <script src="../js/lib/es5-shim.min.js"></script>
+  <script src="../js/lib/es5-sham.min.js"></script>
+  <script src="../js/lib/json3.min.js"></script>
+  <script src="../js/lib/template-web.js"></script>
   	<!--[if lte IE 8]> 
 		 <noscript>
 		      <style>.html5-wrappers{display:none!important;}</style>
@@ -65,14 +69,14 @@
 		</div>
 		<div class="menu font20px"  id="menu">
 			<ul>
-				<li class="active">
-					<a href="index.html">首页</a>
+				<li >
+					<a href="../index.html">首页</a>
 				</li>
 				<li>
 					<a href="index.html">供应大厅</a>
 				</li>
-				<li>
-					<a href="index.html">采购大厅</a>
+				<li class="active">
+					<a href="Purchasing.html">采购大厅</a>
 				</li>
 				<li>
 					<a href="index.html">兴业资讯</a>
@@ -84,41 +88,41 @@
 		</div>
 	</div>
     <div class="content">
-        <div class="product">
+        <div class="product" id="product">
             <div class="personInfo">
-                <div class="releaseTime">发布时间：<span>2018-08-13</span></div>
-                <div class="viewnumber">浏览次数：<span>7次</span></div>
-                <div class="releasePerson">发布人：<span>冯荣球</span></div>
+                <div class="releaseTime">发布时间：</div>
+                <div class="viewnumber">浏览次数：</div>
+                <div class="releasePerson">发布人:</div>
                 <div class="collect" id="collect"><i class="icon-collect"></i>收藏</div>
             </div>
 			<div class="detail">
 				<div class="purchaseing">
 					<div class="purchaseAwait">
-						<span class="classify">[采购] 牡丹</span>
+						<span class="classify"></span>
 						<i class="icon-await"></i>
-						<span class="awaiting">采购中...</span>
+						<span class="awaiting"></span>
 					</div>
 					<div class="information">
 						<span class="productdesc">品种</span>
-						<span class="productdetail fontweight">不限</span>
+						<span class="productdetail fontweight"></span>
 						<span class="productnum">采购量</span>
-						<span class="fontweight">7000.0棵</span>
+						<span class="fontweight"></span>
 					</div>
 					<div class="information">
 						<span class="productdesc">期望价格</span>
-						<span class="productdetail fontweight">面议</span>
+						<span class="productdetail fontweight"></span>
 						<span class="productnum">期望货源地址</span>
-						<span class="fontweight fontweight">不限</span>
+						<span class="fontweight fontweight"></span>
 					</div>
 					<div class="lasttime">
 						<i class="icon-lasttime"></i>
-						<span class="time">截止日期：2019-08-13</span>
+						<span class="time">截止日期：</span>
 					</div>
 				</div>
 				<div class="purchaseInfo">
 					<p class="info">采购商信息</p>
-					<p class="name">冯荣球</p>
-					<p class="city">广东省清远市</p>
+					<p class="name"></p>
+					<p class="city"></p>
 					<p class="tip">交易纠纷时有发生，建议谨慎交易。具体参见 防骗提醒。</p>
 				</div>
 			</div>
@@ -201,28 +205,112 @@
 			</div>
 		</div>
 	</div>
-	<script src="../jquery-1.11.3.min.js"></script>
+	<script src="../js/lib/jquery-1.11.3.min.js"></script>
 	<script src="../js/common.js"></script>
+	<script id="TpersonInfo" type="text/html">
+		{{if success}}
+			<div class="personInfo">
+                <div class="releaseTime">发布时间：<span>{{product.releaseTime}}</span></div>
+                <div class="viewnumber">浏览次数：<span>{{product.viewnumber}}</span></div>
+                <div class="releasePerson">发布人：<span>{{product.releasePerson}}</span></div>
+				{{if product.collect}} 
+                <div class="collect" id="collect" style="color:#ccc">
+					<i class="icon-collect" style="background: url(../images/icon/collect.png"></i>已收藏
+				</div>
+				{{else}}
+				<div class="collect" id="collect" style="color: #FF0000">
+					<i class="icon-collect" style="background: url(../images/icon/nocollect.png"></i>收藏
+				</div>
+				{{/if}}
+            </div>
+			<div class="detail">
+				<div class="purchaseing">
+					<div class="purchaseAwait">
+						<span class="classify">{{product.classify}}</span>
+						<i class="icon-await"></i>
+						<span class="awaiting">{{product.Purchasingstatus}}</span>
+					</div>
+					<div class="information">
+						<span class="productdesc">品种</span>
+						<span class="productdetail fontweight">{{product.productdesc}}</span>
+						<span class="productnum">采购量</span>
+						<span class="fontweight">{{product.productnum}}</span>
+					</div>
+					<div class="information">
+						<span class="productdesc">期望价格</span>
+						<span class="productdetail fontweight">{{product.productproduct}}</span>
+						<span class="productnum">期望货源地址</span>
+						<span class="fontweight fontweight">{{product.productaddress}}</span>
+					</div>
+					<div class="lasttime">
+						<i class="icon-lasttime"></i>
+						<span class="time">截止日期：{{product.lasttime}}</span>
+					</div>
+				</div>
+				<div class="purchaseInfo">
+					<p class="info">采购商信息</p>
+					<p class="name">{{product.purchaseInfoname}}</p>
+					<p class="city">{{product.purchaseInfocity}}</p>
+					<p class="tip">交易纠纷时有发生，建议谨慎交易。具体参见 防骗提醒。</p>
+				</div>
+			</div>
+            <div class="bugDetail"></div>
+		{{/if}}
+	</script>
 	<script>
 		$(function () {
-			/**
-			* 收藏功能
-			*/
-			var iscollect = false; // 判断是否收藏
-			$('#collect').click(function () {
-				if (iscollect) { // 未收藏
-					iscollect = false
-					$('#collect').css({'color': '#FF0000'}).html('<i class="icon-collect"></i>收藏')
-					$('#collect .icon-collect').css({'background': 'url(../images/icon/nocollect.png)'})
-				} else { // 收藏成功
-					iscollect = true
-					$('#collect').css({'color': '#ccc'}).html('<i class="icon-collect"></i>已收藏')
-					$('#collect .icon-collect').css({'background': 'url(../images/icon/collect.png)'})
-				}
+			
+			 var iscollect = false; // 判断是否收藏
+			 $.ajax({
+				 type: 'get',
+				 url: 'https://www.easy-mock.com/mock/5b763234f989ec12eb03db9c/PurchasingDetail',
+				 success: function (data) {
+					 /**
+					 *  初始化数据
+					 */
+					 var personInfo = template('TpersonInfo', data);
+					 $('#product').html(personInfo)
 
-				
+					 
+					/**
+					* 收藏功能
+					*/
+					iscollect = data.product.collect // 赋值收藏，让后续点击收藏/取消收藏时类型判断。
+					$('#collect').click(function () {
+						if (iscollect) { // 未收藏
+							$.ajax({
+								type: 'get',
+								url: 'https://www.easy-mock.com/mock/5b763234f989ec12eb03db9c/nocollect',
+								success: function (data) {
+									if (data.success && data.collect === false) {  // 取消收藏
+										iscollect = false
+										$('#collect').css({'color': '#FF0000'}).html('<i class="icon-collect"></i>收藏')
+										$('#collect .icon-collect').css({'background': 'url(../images/icon/nocollect.png)'})
+										alert('取消收藏成功')
+									} else {
+										alert('取消收藏失败！')
+									}
+								}
+							})
+						} else {
+							$.ajax({ // 收藏成功
+								type: 'get',
+								url: 'https://www.easy-mock.com/mock/5b763234f989ec12eb03db9c/collect',
+								success: function (data) {
+									if (data.success && data.collect) {  
+										iscollect = true
+										$('#collect').css({'color': '#ccc'}).html('<i class="icon-collect"></i>已收藏')
+										$('#collect .icon-collect').css({'background': 'url(../images/icon/collect.png)'})
+										alert('收藏成功')
+									} else {
+										alert('收藏失败！')
+									}
+								}
+							})	
+						}
+					})
+				}
 			})
-	
 		})
 	</script>
  </body>

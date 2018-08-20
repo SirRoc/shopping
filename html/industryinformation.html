@@ -11,6 +11,10 @@
   <!--IE10-->
   <meta http-equiv="X-UA-Compatible" content="IE=8,IE=9,IE=10"/>
   <meta name=”renderer” content=”webkit|ie-comp|ie-stand”/>
+  <script src="../js/lib/es5-shim.min.js"></script>
+  <script src="../js/lib/es5-sham.min.js"></script>
+  <script src="../js/lib/json3.min.js"></script>
+  <script src="../js/lib/template-web.js"></script>
   	<!--[if lte IE 8]> 
 		 <noscript>
 		      <style>.html5-wrappers{display:none!important;}</style>
@@ -65,20 +69,20 @@
 		</div>
 		<div class="menu font20px"  id="menu">
 			<ul>
-				<li class="active">
-					<a href="index.html">首页</a>
+				<li>
+					<a href="../index.html">首页</a>
 				</li>
 				<li>
 					<a href="index.html">供应大厅</a>
 				</li>
 				<li>
-					<a href="index.html">采购大厅</a>
+					<a href="Purchasing.html">采购大厅</a>
+				</li>
+				<li  class="active">
+					<a href="industryinformation.html">行业资讯</a>
 				</li>
 				<li>
-					<a href="index.html">兴业资讯</a>
-				</li>
-				<li>
-					<a href="index.html">农产品溯源</a>
+					<a href="traceability.html">农产品溯源</a>
 				</li>
 			</ul>
 		</div>
@@ -86,24 +90,77 @@
     <div class="content">
         <div class="formation">
             <div class="catalogue">
-                <ul>
-                    <li class="home">首页</li>
-                    <li class="school">惠农学堂</li>
-                    <li class="money">致富经</li>
-                    <li class="policy">三农政策</li>
-                    <li class="economics">县域经济</li>
+                <ul id="menulist">
+                    <li class="home active">
+						<a href="">
+							<i class="icon-home"></i>
+							<span>首页</span>
+						</a>
+                    </li>
+                    <li class="school" >
+						<a href="">
+							<i class="icon-school"></i>
+							<span>惠农学堂</span>
+						</a>
+                    </li>
+                    <li class="money" >
+						<a href="">
+							<i class="icon-money"></i>
+							<span>致富经</span>
+						</a>
+                    </li>
+                    <li class="policy" >
+						<a href="">
+							<i class="icon-policy"></i>
+							<span>三农政策</span>
+						</a>
+                    </li>
+                    <li class="economics">
+						<a href="">
+							<i class="icon-economics"></i>
+							<span>县域经济</span>
+						</a>
+                    </li>
                 </ul>
             </div>
             <div class="infolist">
-                <ul>
+                <ul id="infolistdetai">
                     <li>
                         <div class="image"><img src="" alt=""></div>
                         <div class="article">
                             <p class="title">专题回顾：习近平话“三农” 乡村振兴战略</p>
-                            <p class="content">习近平总书记在党的十九大报告中首次提出实施乡村振兴战略，要求坚持农业农村优先发展，加快推进农业农村现代化。十九大后，总书记多次谈及“三农”问题，始终把解决好“三农”问题作为全党工作的重中之重...</p>
+                            <p class="detail" id="infolistdetail">习近平总书记在党的十九大报告中首次提出实习近平总书记在党的十九大记在党的十九大记在党的十九大报告中首次提出实习近平总书记在党的十九大报告中首次提出实施乡村振兴战略，要求坚持农业农村优先发展，加快推进农业农村现代化。十九大后，总书记多次谈及“三农”问题，始终把解决好“三农”问提出实习近平总书记在党的十九大报告中首次提出实施乡村振兴战略，要求坚持农业农村优先发展，加快推进农业农村现代化。十九大后，总书记多次谈及“三农”问题，始终把解决好“三农”问题作为全党工作的重中之重</p>
+							<p class="time">2018-08-14</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image"><img src="" alt=""></div>
+                        <div class="article">
+                            <p class="title">专题回顾：习近平话“三农” 乡村振兴战略</p>
+                            <p class="detail" id="infolistdetai2">习近平总书记在党的十九大报告中首次提出实习近平总书记在党的十九大记在党的十九大记在党的十九大报告中首次提出实习近平总书记在党的十九大报告中首次提出实施乡村振兴战略，要求坚持农业农村优先发展，加快推进农业农村现代化。十九大后，总书记多次谈及“三农”问题，始终把解决好“三农”问提出实习近平总书记在党的十九大报告中首次提出实施乡村振兴战略，要求坚持农业农村优先发展，加快推进农业农村现代化。十九大后，总书记多次谈及“三农”问题，始终把解决好“三农”问题作为全党工作的重中之重</p>
+							<p class="time">2018-08-14</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image"><img src="" alt=""></div>
+                        <div class="article">
+                            <p class="title">专题回顾：习近平话“三农” 乡村振兴战略</p>
+                            <p class="detail" id="infolistdetai3">习近平总书记在党的十九大报告中首次提出实习近平总书记在党的十九大记在党的十九大记在党的十九大报告中首次提出实习近平总书记在党的十九大报告中首次提出实施乡村振兴战略，要求坚持农业农村优先发展，加快推进农业农村现代化。十九大后，总书记多次谈及“三农”问题，始终把解决好“三农”问提出实习近平总书记在党的十九大报告中首次提出实施乡村振兴战略，要求坚持农业农村优先发展，加快推进农业农村现代化。十九大后，总书记多次谈及“三农”问题，始终把解决好“三农”问题作为全党工作的重中之重</p>
+							<p class="time">2018-08-14</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image"><img src="" alt=""></div>
+                        <div class="article">
+                            <p class="title">专题回顾：习近平话“三农” 乡村振兴战略</p>
+                            <p class="detail" id="infolistdetai4">习近平总书记在党的十九大报告中首次提出实习近平总书记在党的十九大记在党的十九大记在党的十九大报告中首次提出实习近平总书记在党的十九大报告中首次提出实施乡村振兴战略，要求坚持农业农村优先发展，加快推进农业农村现代化。十九大后，总书记多次谈及“三农”问题，始终把解决好“三农”问提出实习近平总书记在党的十九大报告中首次提出实施乡村振兴战略，要求坚持农业农村优先发展，加快推进农业农村现代化。十九大后，总书记多次谈及“三农”问题，始终把解决好“三农”问题作为全党工作的重中之重</p>
+							<p class="time">2018-08-14</p>
                         </div>
                     </li>
                 </ul>
+				<div class="paging"  style="margin-top: 125px;">
+					<div id="page" class="page_div"></div>
+				</div>
             </div>
         </div>
     </div>
@@ -183,37 +240,89 @@
 			</div>
 		</div>
 	</div>
-	<script src="../jquery-1.11.3.min.js"></script>
+	<script src="../js/lib/jquery-1.11.3.min.js"></script>
 	<script src="../js/common.js"></script>
+	<script  id="Tinfolistdetai" type="text/html">
+		{{if success}} 
+			{{each industryinformation item index}}
+			<li>
+				<a href="industryinformationDetail.html?{{item.id}}">
+					<div class="image"><img src="{{item.image}}" alt=""></div>
+					<div class="article">
+						<p class="title">{{item.title}}</p>
+						<p class="detail" id="infolistdetai{{index+1}}">{{item.detail}}</p>
+						<p class="time">{{item.date}}</p>
+					</div>
+				</a>
+			</li>
+			{{/each}}
+		{{/if}}
+	</script>
 	<script>
 		
 		$(function () {
-			// 去除商品底部虚线
-			$('#variety li:last').css({'border-bottom': 0})
-			// 激活分类
-			$('#fruits li').click(function () {
-				$(this).addClass('active').siblings().removeClass('active')
-			})
-			$('#city li').click(function () {
-				$(this).addClass('active').siblings().removeClass('active')
-			})
-			$('#replate li').click(function () {
-				$(this).addClass('active').siblings().removeClass('active')
-			})
-		}) 
-		//分页
-		$("#page").paging({
-			pageNo:1,
-			totalPage: 9,
-			totalSize: 300,
-			callback: function(num) {
-				// 分页点击后返回的页面数
-				console.log(num)
-			}
-		})
-		// 
-		$(function () {
+			// 初始化
+			$.ajax({
+				type: 'get',
+				url: 'https://www.easy-mock.com/mock/5b763234f989ec12eb03db9c/industryinformation/init',
+				success(data) {
+					var html = template('Tinfolistdetai', data);
+					$('#infolistdetai').html(html)	
 
+					var pageNo = 1, // 起始页
+						totalPage = 9, // 总页数  
+						totalSize = 300 // 总记录数
+					//点击分页
+					$("#page").paging({
+						pageNo: pageNo,// 起始页数
+						totalPage: totalPage, // 总页数
+						totalSize: totalSize, // 总记录数
+						callback: function(num) {
+							// 分页点击后返回的页面数
+							$.ajax({
+								type: 'get',
+								url: 'https://www.easy-mock.com/mock/5b763234f989ec12eb03db9c/industryinformation/'+num,
+								success(data) {
+										var html = template('Tinfolistdetai', data);
+										$('#infolistdetai').html(html)	
+										// 多行文本隐藏
+										overflowhidden()
+								}
+							})
+						}
+					})
+
+					// 必须在ajax请求后
+					// 多行文本隐藏
+					overflowhidden()
+					function overflowhidden() {
+						var textnumber = 130 // 超过该字数隐藏
+						$.each($('#infolistdetai').children(),function (i, item) {
+							if ($(this).find('.detail').text().length > textnumber) {
+								$(this).find('.detail').html($(this).text().slice(0,textnumber) + '......')
+							}
+						})
+					}
+				}
+			})
+			
+            //  子菜单列表点击
+            $('#menulist li').click(function () {
+                $(this).addClass('active')
+                    .siblings().removeClass('active')
+				console.log($(this).find('.home'))
+
+            })
+            //分页
+            $("#page").paging({
+                pageNo:1,
+                totalPage: 9,
+                totalSize: 300,
+                callback: function(num) {
+                    // 分页点击后返回的页面数
+                    console.log(num)
+                }
+            })
 		})
 	</script>
  </body>

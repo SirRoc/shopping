@@ -11,6 +11,10 @@
   <!--IE10-->
   <meta http-equiv="X-UA-Compatible" content="IE=8,IE=9,IE=10"/>
   <meta name=”renderer” content=”webkit|ie-comp|ie-stand”/>
+  <script src="js/lib/es5-shim.min.js"></script>
+  <script src="js/lib/es5-sham.min.js"></script>
+  <script src="js/lib/json3.min.js"></script>
+  <script src="js/lib/template-web.js"></script>
   	<!--[if lte IE 8]> 
 		 <noscript>
 		      <style>.html5-wrappers{display:none!important;}</style>
@@ -52,7 +56,7 @@
 		<div class="brand clearfix">
 			<div class="logo">
 				<a href="index.html">
-					<img src="" alt="">
+					<img src="http://placehold.it/200x120" alt="">
 				</a>
 			</div>
 			<div class="search">
@@ -69,13 +73,13 @@
 					<a href="index.html">供应大厅</a>
 				</li>
 				<li>
-					<a href="index.html">采购大厅</a>
+					<a href="html/Purchasing.html">采购大厅</a>
 				</li>
 				<li>
-					<a href="index.html">兴业资讯</a>
+					<a href="html/industryinformation.html">行业资讯</a>
 				</li>
 				<li>
-					<a href="index.html">农产品溯源</a>
+					<a href="html/traceability.html">农产品溯源</a>
 				</li>
 			</ul>
 		</div>
@@ -99,176 +103,106 @@
 					<p>最新供应 </p>
 					<i class="icon-more"></i>
 				</div>
-				<ul>
-					<li>
-						<span class="time">2018-08-09</span>
-						<span class="productname">艳椒425干辣椒</span>
-						<span class="price">9元/斤</span>
-					</li>
-					<li>
-						<span class="time">2018-08-09</span>
-						<span class="productname">艳椒425干辣椒</span>
-						<span class="price">9元/斤</span>
-					</li>
-					<li>
-						<span class="time">2018-08-09</span>
-						<span class="productname">艳椒425干辣椒</span>
-						<span class="price">9元/斤</span>
-					</li>
-					<li>
-						<span class="time">2018-08-09</span>
-						<span class="productname">艳椒425干辣椒</span>
-						<span class="price">9元/斤</span>
-					</li>
-					<li>
-						<span class="time">2018-08-09</span>
-						<span class="productname">艳椒425干辣椒</span>
-						<span class="price">9元/斤</span>
-					</li>
-					<li>
-						<span class="time">2018-08-09</span>
-						<span class="productname">艳椒425干辣椒</span>
-						<span class="price">9元/斤</span>
-					</li>
-					<li>
-						<span class="time">2018-08-09</span>
-						<span class="productname">艳椒425干辣椒</span>
-						<span class="price">9元/斤</span>
-					</li>
-				</ul>
+				<ul id="provisionproductlist"></ul>
 			</div>
 			<div class="provision">
 				<div class="title">
 					<p>最新采购 </p>
 					<i class="icon-more"></i>
 				</div>
-				<ul>
-					<li>
-						<span class="time">2018-08-09</span>
-						<span class="productname">艳椒425干辣椒</span>
-						<span class="price">面议</span>
-					</li>
-					<li>
-						<span class="time">2018-08-09</span>
-						<span class="productname">艳椒425干辣椒</span>
-						<span class="price">面议</span>
-					</li>
-					<li>
-						<span class="time">2018-08-09</span>
-						<span class="productname">艳椒425干辣椒</span>
-						<span class="price">面议</span>
-					</li>
-					<li>
-						<span class="time">2018-08-09</span>
-						<span class="productname">艳椒425干辣椒</span>
-						<span class="price">面议</span>
-					</li>
-					<li>
-						<span class="time">2018-08-09</span>
-						<span class="productname">艳椒425干辣椒</span>
-						<span class="price">面议</span>
-					</li>
-					<li>
-						<span class="time">2018-08-09</span>
-						<span class="productname">艳椒425干辣椒</span>
-						<span class="price">面议</span>
-					</li>
-					<li>
-						<span class="time">2018-08-09</span>
-						<span class="productname">艳椒425干辣椒</span>
-						<span class="price">面议</span>
-					</li>
-				</ul>
+				<ul id="purchaseproductlist"></ul>
 			</div>
 		</div>
-		<div class="message">
+		<div class="message" >
 				<div class="title">
 					<i class="icon-message"></i>
 					<h4>行业资讯</h4>
 					<i class="icon-more"></i>
 				</div>
-				<div class="information">
-					<div class="bg icon-school"></div>
-					<div class="special">
-						<h2>专题回顾：习近平话“三农” 乡村振兴战略</h2>
-						<p class="Projectreview" id="Projectreview1">习近平总书记在党的十九大报告中首次提平总书记在党的十九大报告中首次提平总书记在党的十九大报告中首次提出实施乡村振兴战略，要求坚持农业农村优先发展，加快推进农业农村现代化。十九大后，总书记多次谈及“三农”问题，始终把解决好“三农”问题作为全党工作的重中之重。</p>
-						<ul>
-							<li>
-								<p>农业农村部：建立农村人居环境改善长效机制</p>
-								<span class="time">2018-08-09</span>
-							</li>
-							<li>
-								<p>农业农村部：建立农村人居环境改善长效机制</p>
-								<span class="time">2018-08-09</span>
-							</li>
-							<li>
-								<p>农业农村部：建立农村人居环境改善长效机制</p>
-								<span class="time">2018-08-09</span>
-							</li>
-						</ul>
+				<div id="industryinformation">
+					<div class="information">
+						<div class="bg icon-school"></div>
+						<div class="special">
+							<h2></h2>
+							<p class="Projectreview" id="Projectreview2"></p>
+							<ul>
+								<li>
+									<p></p>
+									<span class="time"></span>
+								</li>
+								<li>
+									<p></p>
+									<span class="time"></span>
+								</li>
+								<li>
+									<p></p>
+									<span class="time"></span>
+								</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-				<div class="information">
-					<div class="bg icon-becomerich"></div>
-					<div class="special">
-						<h2>专题回顾：习近平话“三农” 乡村振兴战略</h2>
-						<p class="Projectreview" id="Projectreview2">习近平总书记在党的十九大报告中首次提出实施习近平总书记在党的十九大报告中首次提出实施习近平总书记在党的十九大报告中首次提出实施习近平总书记在党的十九大报告中首次提出实施习近平总书记在党的十九大报告中首次提出实施乡村振兴战略，要求坚持农业农村优先发展，加快推进农业农村现代化。十九大后，总书记多次谈及“三农”问题，始终把解决好“三农”问题作为全党工作的重中之重。</p>
-						<ul>
-							<li>
-								<p>农业农村部：建立农村人居环境改善长效机制</p>
-								<span class="time">2018-08-09</span>
-							</li>
-							<li>
-								<p>农业农村部：建立农村人居环境改善长效机制</p>
-								<span class="time">2018-08-09</span>
-							</li>
-							<li>
-								<p>农业农村部：建立农村人居环境改善长效机制</p>
-								<span class="time">2018-08-09</span>
-							</li>
-						</ul>
+					<div class="information">
+						<div class="bg icon-becomerich"></div>
+						<div class="special">
+							<h2></h2>
+							<p class="Projectreview" id="Projectreview2"></p>
+							<ul>
+								<li>
+									<p></p>
+									<span class="time"></span>
+								</li>
+								<li>
+									<p></p>
+									<span class="time"></span>
+								</li>
+								<li>
+									<p></p>
+									<span class="time"></span>
+								</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-				<div class="information">
-					<div class="bg icon-policy"></div>
-					<div class="special">
-						<h2>专题回顾：习近平话“三农” 乡村振兴战略</h2>
-						<p class="Projectreview" id="Projectreview3">习近平总书记在党的十九大报告中首近平总书记在党的十九大报告中首近平总书记在党的十九大报告中首次提出实施乡村振兴战略，要求坚持农业农村优先发展，加快推进农业农村现代化。十九大后，总书记多次谈及“三农”问题，始终把解决好“三农”问题作为全党工作的重中之重。</p>
-						<ul>
-							<li>
-								<p>农业农村部：建立农村人居环境改善长效机制</p>
-								<span class="time">2018-08-09</span>
-							</li>
-							<li>
-								<p>农业农村部：建立农村人居环境改善长效机制</p>
-								<span class="time">2018-08-09</span>
-							</li>
-							<li>
-								<p>农业农村部：建立农村人居环境改善长效机制</p>
-								<span class="time">2018-08-09</span>
-							</li>
-						</ul>
+					<div class="information">
+						<div class="bg icon-policy"></div>
+						<div class="special">
+							<h2></h2>
+							<p class="Projectreview" id="Projectreview2"></p>
+							<ul>
+								<li>
+									<p></p>
+									<span class="time"></span>
+								</li>
+								<li>
+									<p></p>
+									<span class="time"></span>
+								</li>
+								<li>
+									<p></p>
+									<span class="time"></span>
+								</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-				<div class="information">
-					<div class="bg icon-economics"></div>
-					<div class="special">
-						<h2>专题回顾：习近平话“三农” 乡村振兴战略</h2>
-						<p class="Projectreview" id="Projectreview4">习近平总书记在党的十九大报告中首次在党的十九大报告中首次在党的十九大报告中首次在党的十九大报告中首次在党的十九大报告中首次提出实施乡村振兴战略，要求坚持农业农村优先发展，加快推进农业农村现代化。十九大后，总书记多次谈及“三农”问题，始终把解决好“三农”问题作为全党工作的重中之重。</p>
-						<ul>
-							<li>
-								<p>农业农村部：建立农村人居环境改善长效机制</p>
-								<span class="time">2018-08-09</span>
-							</li>
-							<li>
-								<p>农业农村部：建立农村人居环境改善长效机制</p>
-								<span class="time">2018-08-09</span>
-							</li>
-							<li>
-								<p>农业农村部：建立农村人居环境改善长效机制</p>
-								<span class="time">2018-08-09</span>
-							</li>
-						</ul>
+					<div class="information">
+						<div class="bg icon-economics"></div>
+						<div class="special">
+							<h2></h2>
+							<p class="Projectreview" id="Projectreview2"></p>
+							<ul>
+								<li>
+									<p></p>
+									<span class="time"></span>
+								</li>
+								<li>
+									<p></p>
+									<span class="time"></span>
+								</li>
+								<li>
+									<p></p>
+									<span class="time"></span>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 		</div>
@@ -349,8 +283,58 @@
 			</div>
 		</div>
 	</div>
-	<script src="jquery-1.11.3.min.js"></script>
+	<script src="js/lib/jquery-1.11.3.min.js"></script>
 	<script src="./js/common.js"></script>
+	<script id="Tprovisionproduct" type="text/html">
+		{{if success}}
+			{{if productlist}}
+				{{each productlist item index}}
+				<li>
+					<a href="html/PurchasingDetail.html?{{item.id}}">
+						<span class="time">{{item.time}}</span>
+						<span class="productname">{{item.product}}</span>
+						<span class="price">{{item.metering}}</span>
+					</a>
+				</li>
+				{{/each}}
+			{{else}}
+				{{each provisionproductlist item index}}
+				<li>
+					<a href="html/aa.html?{{item.id}}">
+						<span class="time">{{item.time}}</span>
+						<span class="productname">{{item.product}}</span>
+						<span class="price">{{item.metering}}</span>
+					</a>
+				</li>
+				{{/each}}
+			{{/if}}
+		{{/if}}
+	</script>
+	<script id="Tindustryinformation" type="text/html">
+		{{if success}}
+			{{each industryinformation item index}}			
+			<div class="information">
+					<div class="bg {{industryinformation.imgarr[index]}}"></div>
+					<div class="special">
+				<a href="index.html?{{item.id}}">
+					<h2>{{item.title}}</h2>
+					<p class="Projectreview" id="Projectreview1">{{item.detail}}</p>
+				</a>
+					<ul>
+						{{each item.meslist list i}}
+						<li>
+							<a href="index.html?{{list.id}}">
+								<p>{{list.title}}</p>
+								<span class="time">{{list.time}}</span>
+							</a>
+						</li>
+						{{/each}}
+					</ul>
+				</div>
+			</div>
+			{{/each}}
+		{{/if}}
+	</script>
 	<script>
 		// 輪播圖
 		function imgReload(){
@@ -380,25 +364,54 @@
 		});
 
 		
-		// 必须在ajax请求后
-		// 多行文本隐藏
+		
 		$(function () {
-			var textnumber = 100
-			if ($('#Projectreview1').text().length > textnumber) {
-				$('#Projectreview1').html($('#Projectreview1').text().slice(0,textnumber) + '......')
-			}
-			if ($('#Projectreview2').text().length > textnumber) {
-				$('#Projectreview2').html($('#Projectreview2').text().slice(0,textnumber) + '......')
-			}
-			if ($('#Projectreview3').text().length > textnumber) {
-				$('#Projectreview3').html($('#Projectreview3').text().slice(0,textnumber) + '......')
-			}
-			if ($('#Projectreview4').text().length > textnumber) {
-				$('#Projectreview4').html($('#Projectreview4').text().slice(0,textnumber) + '......')
-			}
+			/**
+			 * 初始化
+			 * 首页商品列表初始化 
+			 */
+			$.ajax({ // 最新供应
+				type: 'get',
+				url: 'https://www.easy-mock.com/mock/5b763234f989ec12eb03db9c/product',
+				success: function  (data) {
+					var productlist = template('Tprovisionproduct', data)
+					$('#provisionproductlist').html(productlist)
+				}
+			})
+			$.ajax({ // 最新采购
+				type: 'get',
+				url: 'https://www.easy-mock.com/mock/5b763234f989ec12eb03db9c/product1',
+				success: function (data) {
+					var productlist = template('Tprovisionproduct', data)
+					$('#purchaseproductlist').html(productlist)
+				}
+			})
+			$.ajax({ // 行业资讯
+				tpye: 'get',
+				url: 'https://www.easy-mock.com/mock/5b763234f989ec12eb03db9c/industryinformation',
+				success: function  (data) {
+					console.log(data)
+					var imgclass = [ // 图片类名
+						'icon-school',
+						'icon-becomerich',
+						'icon-policy',
+						'icon-economics'
+					]
+					data.industryinformation.imgarr = imgclass
+					var industryinformation = template('Tindustryinformation', data)
+					$('#industryinformation').html(industryinformation)
+					
+					// 必须在ajax请求后
+					// 多行文本隐藏
+					var textnumber = 100 // 超过该字数隐藏
+					$.each($('#industryinformation').children(),function (i, item) {
+						if ($(this).find('.Projectreview').text().length > textnumber) {
+							$(this).find('.Projectreview').html($(this).text().slice(0,textnumber) + '......')
+						}
+					})
+				}
 
-
-
+			})
 		})
 	</script>
  </body>

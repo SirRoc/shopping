@@ -1,5 +1,4 @@
 .content {
-    height: 2180px;
     width: 100%;
     background: #F6F6F6;
 }
@@ -7,6 +6,7 @@
     width: 1200px;
     height: 440px;
     margin: 0 auto;
+    margin-bottom: 200px;
 }
 .content .product .personInfo {
     height: 68px;
@@ -75,6 +75,7 @@
     width: 86px;
     height: 100%;
     color: #FF0000;
+    cursor: pointer;
     
 }
 .content .product .collect .icon-collect {
@@ -184,7 +185,7 @@
 .content .purchaseInfo .name {
     position: relative;
     font-size: 20px;
-    height: 48px;
+    height: 44px;
     padding-left: 76px;
 }
 .content .purchaseInfo .name::before {
@@ -202,6 +203,7 @@
     position: relative;
     font-size: 20px;
     padding-left: 76px;
+    padding-top: 8px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -210,9 +212,9 @@
     content: '';
     position: absolute;
     left: 30px;
-    top: -4px;
+    top: -5px;
     width: 24px;
-    height: 30px;
+    height: 48px;
     background: url(../images/icon/address.png) center center no-repeat;
 }
 .content .purchaseInfo .tip {

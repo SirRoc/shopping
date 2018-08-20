@@ -1,0 +1,45 @@
+.content {
+    background: #F6F6F6;
+}
+.content .contentdetail {
+    width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+}
+.content .contentdetail > div {
+    padding-left: 8px;
+    font-size: 16px;
+    margin: 0 22px;
+    color: #999999;
+}
+.content .contentdetail .loaction {
+    width: 1150px;
+    height: 30px;
+    padding-top: 44px;
+    border-bottom: 1px solid #DDDDDD;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.content .contentdetail .title {
+    width: 1150px;
+    line-height: 41px;
+    padding: 48px 0;
+    font-size: 32px;
+    color: #000;
+}
+.content .contentdetail .titledetail {
+    height: 54px;
+    border-bottom: 2px solid #DDDDDD;
+}
+.content .contentdetail .maincontent {
+    line-height: 33px;
+    padding-bottom: 126px;
+    font-size: 18px;
+    color: #000;
+    text-indent: 2em;
+}
+.content .contentdetail .mainbody .img {
+    margin: 36px 0;
+    text-align: center;
+}

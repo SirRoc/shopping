@@ -49,8 +49,15 @@ a {
     border:0;
     font-size:100%;
     vertical-align:baseline;
+    text-decoration: none;
+    color: #999999;
 }
-
+a:hover {
+    color:#07f;
+}
+a:active {
+    color: #666;
+}
 ins {
     background-color:#ff9;
     color:#000;
