@@ -88,12 +88,30 @@
 		</div>
 	</div>
 	<div class="content">
-		<div class="filter">
+		<div class="filter" id="filter">
 			<div class="area">
-				<div class="trait">热门</div>
-				<div class="product">
+				<div class="trait">热门<i class="icon-more"></i></div>
+				<div class="product hidden">
 					<ul class="classify" id="fruits">
 						<li class="pd active">不限</li>
+						<li>柑橘</li>
+						<li>金桔</li>
+						<li>柚子</li>
+						<li>柑橘</li>
+						<li>金桔</li>
+						<li>柚子</li>
+						<li>柑橘</li>
+						<li>金桔</li>
+						<li>柚子</li>
+						<li>柑橘</li>
+						<li>金桔</li>
+						<li>柚子</li>
+						<li>柑橘</li>
+						<li>金桔</li>
+						<li>柚子</li>
+						<li>柑橘</li>
+						<li>金桔</li>
+						<li>柚子</li>
 						<li>柑橘</li>
 						<li>金桔</li>
 						<li>柚子</li>
@@ -101,8 +119,8 @@
 				</div>
 			</div>
 			<div class="area">
-				<div class="trait">地区</div>
-				<div class="product">
+				<div class="trait">地区<i class="icon-more"></i></div>
+				<div class="product hidden">
 					<ul class="classify" id="city">
 						<li class="pd active">不限</li>
 						<li>河北</li>
@@ -119,8 +137,8 @@
 				</div>
 			</div>
 			<div class="area">
-				<div class="trait">发布时间</div>
-				<div class="product">
+				<div class="trait">发布时间<i class="icon-more"></i></div>
+				<div class="product hidden">
 					<ul class="classify" id="replate">
 						<li class="pd active">不限</li>
 						<li>近7天</li>
@@ -280,15 +298,12 @@
 					})
 				}
 			})
-			
-			// 点击详情页
-			$('#todetail').click(function () {
-
+			// 点击更多商品
+			$('#filter > div .trait').click(function () {
+				$(this).next().toggleClass('hidden')
+				$(this).find('.icon-more').toggleClass('icon-top')
+				
 			})
-
-
-
-
 			// 去除商品底部虚线
 			$('#variety li:last').css({'border-bottom': 0})
 			// 激活分类

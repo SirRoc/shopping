@@ -163,3 +163,12 @@ $(function(){
 	}) 
 	
 });
+// art-template 过滤器
+template.defaults.imports.date = function(date){
+	var datetime = new Date(date.toString().substr(0,19).replace(/-/g,'/'))
+	return datetime.getFullYear() +'年'+ (datetime.getMonth() + 1) +'月'+ datetime.getDate() + '日'
+};
+template.defaults.imports.modes = function(date, d){
+	console.log(date, d)
+	return '2222'
+};

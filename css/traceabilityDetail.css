@@ -1,0 +1,155 @@
+.content {
+    width: 100%;
+}
+.content .detail {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 26px;
+}
+.content .detail .info {
+    border-top: 2px solid #4F6F1F;
+    border-bottom: 1px solid #DDDDDD;
+}
+.content .detail .info > div{
+    padding-top: 46px;
+    padding-bottom: 44px;
+}
+.content .info p {
+    line-height: 50px;
+    font-size: 16px;
+}
+.content .detail .info .left {
+    display: inline-block;
+    width: 100px;
+    padding-left: 42px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.content .detail .info .left1 {
+    display: inline-block;
+    width: 1000px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.tab {
+    width: 100%;
+}
+.tab #tabs {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    margin-top: 22px;
+    background: #f7f7f7;
+    border-bottom: 2px solid #4F6F1F;
+    font-size: 0;
+}
+.tab #tabs li {
+    display: inline-block;
+    width: 184px;
+    height: 100%;
+    font-size: 16px;
+    text-align: center;
+}
+.tab #tabs li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    
+}
+.tab #tabs li.active a {
+    background: #809556;
+    color: #fff;
+    vertical-align: bottom;
+}
+.tab #tabs li:hover a{
+    background: #809556;
+    color: #fff;
+    vertical-align: bottom;
+}
+
+#tabcontent {
+    display: block;
+    padding-bottom: 84px;
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 190px;
+}
+.tab #tabcontent div {
+    margin-top: 38px;
+    width:  100%;
+}
+#tabcontent ul {
+    border: 1px solid #88A952;
+    border-bottom: 0;
+    text-align: center;
+    width: 1150px;
+    margin: 0 auto;
+}
+#tabcontent ul .header{
+    background: #ECF5D8;
+    line-height: 60px;
+}
+#tabcontent li {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #88A952;
+}
+#tabcontent li.header {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 0;
+}
+#tabcontent li p {
+   display: table-cell;
+  vertical-align: middle;
+}
+#tabcontent li p.name{
+    width: 20.8%;
+    line-height: 24px;
+    border-right: 2px solid #88A952;
+    padding: 25px;
+}
+#tabcontent li p.number{
+    width: 30.1%;
+    border-right: 2px solid #88A952;
+}
+#tabcontent li p.mode{
+    width: 29%;
+    border-right: 2px solid #88A952;
+}
+#tabcontent li p.date{
+    width: 20.1%;
+}
+#tabcontent li.header p.name {
+    padding: 0 25px;
+    border-right: 2px solid #fff;
+
+}
+#tabcontent li.header p.number{
+    border-right: 2px solid #fff;
+}
+#tabcontent li.header p.mode{
+    border-right: 2px solid #fff;
+}
+#tabcontent .productinfo ul {
+    display: inline-block;
+    border: 0;
+    width: 140px;
+    text-align: left;
+    vertical-align: top;
+}
+#tabcontent .productinfo ul p {
+    line-height: 50px;
+}
+#tabcontent .productinfo ul.left {
+    padding-left: 42px;
+}
+#tabcontent .productinfo ul.left1 p {
+    width: 1000px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

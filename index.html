@@ -292,7 +292,7 @@
 				<li>
 					<a href="html/PurchasingDetail.html?{{item.id}}">
 						<span class="time">{{item.time}}</span>
-						<span class="productname">{{item.product}}</span>
+						<span class="productname" title="{{item.product}}">{{item.product}}</span>
 						<span class="price">{{item.metering}}</span>
 					</a>
 				</li>
@@ -302,7 +302,7 @@
 				<li>
 					<a href="html/aa.html?{{item.id}}">
 						<span class="time">{{item.time}}</span>
-						<span class="productname">{{item.product}}</span>
+						<span class="productname"  title="{{item.product}}">{{item.product}}</span>
 						<span class="price">{{item.metering}}</span>
 					</a>
 				</li>
@@ -317,14 +317,14 @@
 					<div class="bg {{industryinformation.imgarr[index]}}"></div>
 					<div class="special">
 				<a href="index.html?{{item.id}}">
-					<h2>{{item.title}}</h2>
-					<p class="Projectreview" id="Projectreview1">{{item.detail}}</p>
+					<h2 title="{{item.title}}">{{item.title}}</h2>
+					<p class="Projectreview" title="{{item.detail}}">{{item.detail}}</p>
 				</a>
 					<ul>
 						{{each item.meslist list i}}
 						<li>
 							<a href="index.html?{{list.id}}">
-								<p>{{list.title}}</p>
+								<p title="{{list.title}}">{{list.title}}</p>
 								<span class="time">{{list.time}}</span>
 							</a>
 						</li>
@@ -363,9 +363,9 @@
 			});
 		});
 
-		
-		
 		$(function () {
+			console.dir(template)
+		
 			/**
 			 * 初始化
 			 * 首页商品列表初始化 
@@ -374,6 +374,7 @@
 				type: 'get',
 				url: 'https://www.easy-mock.com/mock/5b763234f989ec12eb03db9c/product',
 				success: function  (data) {
+					console.log(data)
 					var productlist = template('Tprovisionproduct', data)
 					$('#provisionproductlist').html(productlist)
 				}

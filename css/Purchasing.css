@@ -6,23 +6,20 @@
 	margin-top: 24px;
 }
 .content .filter {
-	height: 180px;
 	width: 100%;
 	padding: 10px 0;
 	font-size: 18px;
-
 }
 .content .filter li {
 	cursor: pointer;
 }
 .content .filter .area{
 	position: relative;
-	height: 60px;
-	line-height: 60px;
+	line-height: 50px;
 }
 .content .filter .area .trait {
 	display: inline-block;
-	width: 120px;
+	width: 160px;
 	height: 100%;
 	text-align: center;
 	vertical-align: top;
@@ -36,25 +33,32 @@
 .content .filter .area ul li {
 	display: inline-block;
 }
-.content .filter .trait::after {
+.content .filter .trait  {
+	position: relative;
+}
+.content .filter .trait .icon-more {
 	content:'';
 	position: absolute;
-	top: 24px;
-	left: 120px;
+	top: 20px;
+	left: 136px;
 	width: 28px;
 	height: 15px;
 	background: url(../images/icon/bottom.png) center center no-repeat;
 }
+.content .filter .trait .icon-top {
+	background: url(../images/icon/top.png) center center no-repeat;
+}
+.content .filter .product.hidden {
+	overflow: hidden;
+	white-space: nowrap;
+}
 .content .filter .product .classify {
-	max-width: 938px;
+	max-width: 950px;
     word-break: break-all;
     word-wrap: break-word;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-    margin-left: 60px;
+    margin-left: 40px;
     margin-top: 9px;
-    height: 60px;
+	line-height: 28px;
 }
 .content .filter .product .classify li:hover {
 	border: 1px solid #FAD94E;
@@ -70,9 +74,9 @@
 	margin-right: 22px;
 	border: 1px solid #fff;
 }
-.content .filter .product .pd {
+/* .content .filter .product .pd {
 	margin-right: 32px;
-}	
+}	 */
 .content .filter .product .classify li.active  {
 	border: 1px solid #FAD94E;
 }
