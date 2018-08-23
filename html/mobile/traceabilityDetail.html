@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" viewport-fit="cover">
+  <title>中国好食材微商城</title>
+  <link rel="stylesheet" type="text/css" href="./css/base.css">
+  <link rel="stylesheet"  type="text/css" href="./css/traceabilityDetail.css">
+  <script src="./js/lib/art-template.js"></script>
+</head>
+<body>
+    <header>
+        <div class="search">
+            <!-- <i class="icon-sao"></i> -->
+            <div class="searchcontent">
+                <input type="text" placeholder="请输入16位或22位真源码" id="content">
+                <i class="icon-search" id="search"></i>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+      <div class="content">
+        <div class="left">
+          <p>主体名称</p>
+          <p>单位地址</p>
+          <p>主体性质</p>
+          <p>负责人</p>
+          <p>手机号码</p>
+          <p>信息员</p>
+          <p>手机号码</p>
+          <p>电子邮箱</p>
+        </div>
+        <div class="left1" id="maininfo">
+        </div>
+      </div>
+      <div class="tab" id="tab">
+          <div class="tabmenu">
+            <div class="text">产品信息<i class="icon-more"></i></div>
+            <div class="tabcontent info" id="tabcontent">
+              <ul class="left" >
+                  <p>产业类型</p>
+                  <p>产品名称</p>
+                  <p>生产基地</p>
+                  <p>播种时间</p>
+                  <p>播种面积</p>
+                  <p>产品认证时间</p>
+                  <p>认证有效期</p>
+              </ul>
+              <ul class="left1" >
+              </ul>
+            </div>
+          </div>
+          <div class="tabmenu">
+            <div class="text">用药信息<i class="icon-more"></i></div>
+            <div class="tabcontent" id="tabcontent">
+              <ul class="title">
+                <li>检测方式</li>
+                <li>检测项目</li>
+                <li>检测结果</li>
+                <li>检测时间</li>
+              </ul>
+              <ul class="content">
+                <li>检测方式</li>
+                <li>检测项目</li>
+                <li>检测结果</li>
+                <li>检测时间</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tabmenu">
+            <div class="text">施肥信息<i class="icon-more"></i></div>
+            <div class="tabcontent" id="tabcontent">
+              <ul class="title">
+                <li>检测方式</li>
+                <li>检测项目</li>
+                <li>检测结果</li>
+                <li>检测时间</li>
+              </ul>
+              <ul class="content">
+                <li>检测方式</li>
+                <li>检测项目</li>
+                <li>检测结果</li>
+                <li>检测时间</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tabmenu">
+            <div class="text">农事活动<i class="icon-more"></i></div>
+            <div class="tabcontent" id="tabcontent">
+              <ul class="title">
+                <li>检测方式</li>
+                <li>检测项目</li>
+                <li>检测结果</li>
+                <li>检测时间</li>
+              </ul>
+              <ul class="content">
+                <li>检测方式</li>
+                <li>检测项目</li>
+                <li>检测结果</li>
+                <li>检测时间</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tabmenu">
+            <div class="text">采收信息<i class="icon-more"></i></div>
+            <div class="tabcontent" id="tabcontent">
+              <ul class="title">
+                <li>检测方式</li>
+                <li>检测项目</li>
+                <li>检测结果</li>
+                <li>检测时间</li>
+              </ul>
+              <ul class="content">
+                <li>检测方式</li>
+                <li>检测项目</li>
+                <li>检测结果</li>
+                <li>检测时间</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tabmenu">
+            <div class="text">检测情况<i class="icon-more"></i></div>
+            <div class="tabcontent" id="tabcontent">
+              <ul class="title">
+                <li>检测方式</li>
+                <li>检测项目</li>
+                <li>检测结果</li>
+                <li>检测时间</li>
+              </ul>
+              <ul class="content">
+                <li>检测方式</li>
+                <li>检测项目</li>
+                <li>检测结果</li>
+                <li>检测时间</li>
+              </ul>
+            </div>
+          </div>
+
+      </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script id="Tmaininfo" type="text/html">
+    {{if success}}
+        <div class="left1">
+            <p>{{maincontainer.name}}</p>
+            <p>{{maincontainer.address}}</p>
+            <p>{{maincontainer.nature}}</p>
+            <p>{{maincontainer.person}}</p>
+            <p>{{maincontainer.phone}}</p>
+            <p>{{maincontainer.infoperson}}</p>
+            <p>{{maincontainer.infophone}}</p>
+            <p>{{maincontainer.email}}</p>
+        </div>
+    {{/if}}
+    </script>
+    <script id="Ttabcontent" type="text/html">
+        {{if success}} 
+        <div class="tabmenu">
+          <div class="text">产品信息<i class="icon-more"></i></div>
+          <div class="tabcontent info" id="tabcontent">
+            <ul class="left" >
+                <p>产业类型</p>
+                <p>产品名称</p>
+                <p>生产基地</p>
+                <p>播种时间</p>
+                <p>播种面积</p>
+                <p>产品认证时间</p>
+                <p>认证有效期</p>
+            </ul>
+            <ul class="left1" >
+                <p>{{tabs.productinfo.type}}</p>
+                <p>{{tabs.productinfo.name}}</p>
+                <p>{{tabs.productinfo.address}}</p>
+                <p>{{tabs.productinfo.startTime}}</p>
+                <p>{{tabs.productinfo.size}}</p>
+                <p>{{tabs.productinfo.productAtuhTime}}</p>
+                <p>{{tabs.productinfo.AtuhValid}}</p>
+            </ul>
+          </div>
+        </div>
+        <div class="tabmenu">
+            <div class="text">用药信息<i class="icon-more"></i></div>
+            <div class="tabcontent table" id="tabcontent">
+              <ul class="title">
+                <li class="name">农药名称</li>
+                <li class="number">用药数量<br>（毫升/亩）</li>
+                <li class="mode">用药方式</li>
+                <li class="date">用药日期</li>
+              </ul>
+              {{each tabs.medicine item index}}
+              <ul class="contents">
+                <li  class="name">{{item.name}}</li>
+                <li class="number">{{item.number}}</li>
+                <li class="mode">{{item.mode}}</li>
+                <li class="date">{{item.date}}</li>
+              </ul>
+              {{/each}}
+          </div>
+        </div>
+          <div class="tabmenu">
+            <div class="text">施肥信息<i class="icon-more"></i></div>
+            <div class="tabcontent table" id="tabcontent">
+              <ul class="title">
+                <li class="name">肥料名称</li>
+                <li class="number">施肥数量<br>（公斤/亩）</li>
+                <li class="mode">施肥方式</li>
+                <li class="date">施肥日期</li>
+              </ul>
+              {{each tabs.manure item index}}
+              <ul class="contents">
+                <li  class="name">{{item.name}}</li>
+                <li class="number">{{item.number}}</li>
+                <li class="mode">{{item.mode}}</li>
+                <li class="date">{{item.date}}</li>
+              </ul>
+              {{/each}}
+            </div>
+          </div>
+          <div class="tabmenu">
+            <div class="text">农事活动<i class="icon-more"></i></div>
+            <div class="tabcontent table" id="tabcontent">
+              <ul class="title">
+                <li class="name">农事活动项目</li>
+                <li class="number">具体内容<br>（写明具体方法）</li>
+                <li class="date">日期</li>
+              </ul>
+              {{each tabs.Farmingactivities item index}}
+              <ul class="contents">
+                <li  class="name">{{item.name}}</li>
+                <li class="number">{{item.number}}</li>
+                <li class="date">{{item.date}}</li>
+              </ul>
+              {{/each}}
+            </div>
+          </div>
+          <div class="tabmenu">
+            <div class="text">采收信息<i class="icon-more"></i></div>
+            <div class="tabcontent table" id="tabcontent">
+              <ul class="title">
+                <li class="name">数量（公斤）</li>
+                <li class="date">采收日期</li>
+              </ul>
+              {{each tabs.recovery item index}}
+              <ul class="contents">
+                <li  class="name">{{item.number}}</li>
+                <li class="date">{{item.date}}</li>
+              </ul>
+              {{/each}}
+            </div>
+          </div>
+          <div class="tabmenu">
+            <div class="text">检测情况<i class="icon-more"></i></div>
+            <div class="tabcontent table" id="tabcontent">
+              <ul class="title">
+                <li class="name">检测方式</li>
+                <li class="number">检测项目</li>
+                <li class="mode">检测结果</li>
+                <li class="date">检测时间</li>
+              </ul>
+              {{each tabs.detectionmode item index}}
+              <ul class="contents">
+                <li  class="name">{{item.mode}}</li>
+                <li class="number">{{item.item}}
+                  <br>（ml/mu）</li>
+                <li class="mode">{{item.result}}</li>
+                <li class="date">{{item.date}}</li>
+              </ul>
+              {{/each}}
+            </div>
+          </div>
+        {{/if}}
+    </script>
+    <script>
+      $(function () {
+        // 数据初始化
+        $.ajax({
+            type: 'get',
+            url: 'https://www.easy-mock.com/mock/5b763234f989ec12eb03db9c/traceabilityDetail',
+            success: function (date) {
+                var html = template('Tmaininfo', date)
+                $('#maininfo').html(html)
+            }
+        })
+        $.ajax({
+          type: 'get',
+          url: 'https://www.easy-mock.com/mock/5b763234f989ec12eb03db9c/traceabilityDetail',
+          success: function (date) {
+              var html = template('Ttabcontent', date);
+              console.log(html)
+              $('#tab').html(html)
+              // 列表显示隐藏
+              $('#tab .tabmenu').click(function () {
+                $(this).find('.tabcontent').toggle()
+              })
+          }
+        })  
+      })
+    </script>
+</body>
+</html>

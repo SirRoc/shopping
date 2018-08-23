@@ -1,0 +1,149 @@
+body {
+    overflow-x: hidden;
+}
+.container {
+    background: #f7f7f7;
+}
+.search {
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    background: #fff;
+}
+.search .icon-sao{
+    display: inline-block;
+    width: 40px;
+    height: 44px;
+    line-height: 44px;
+    background: url(../images/icon/Flickinga.png) center no-repeat;
+    background-size: 25px 29px;
+    padding-left: 10px;
+}
+.search .space {
+    width: 40px;
+}
+.search .searchcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    font-size: 0;
+    padding: 0 20px;
+}
+.search .searchcontent input{
+    width: 80%;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 10px;
+    box-sizing: border-box;
+    border: 1px solid #D3E7A4;
+    vertical-align: middle;
+    font-size: 12px;
+
+}
+.search .searchcontent .icon-search {
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+    line-height: 28px;
+    background: #D3E7A4 url(../images/icon/search.png) center no-repeat;
+    background-size: 20px 20px;
+    vertical-align: middle;
+}
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+    background: #fff;
+    padding: 20px 0;
+    margin-top: 14px;
+}
+.content .left {
+    width: 76px;
+    line-height: 25px;
+    text-align: left;
+    padding-left: 22px;
+}
+.content .left p {
+    width: 54px;
+}
+.content .left1 {
+    width: 100%;
+    line-height: 25px;
+    text-align: left;
+}
+.content .left1 p {
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.tab .tabmenu {
+    position: relative;
+    width: 100%;
+    line-height: 30px;
+    margin-top: 7px;
+    font-size: 12px;
+    font-weight: 700;
+    background: #fff;
+}
+.tab .tabmenu .text {
+    padding-left: 18px;
+}
+.tab .tabmenu .icon-more {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 30px;
+    background: url(../images/icon/bottom.png) center center no-repeat;
+    background-size: 14px 8px;
+}
+.tab .tabcontent.info {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+}
+.tab .tabcontent {
+    display: none;
+}
+.tab .tabcontent.info .left {
+    padding: 0 18px;
+}
+.tab .tabcontent.table {
+    padding: 8px 12px;
+}
+.tab .tabcontent.table ul{
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    border: 1px solid #88A952;
+    vertical-align: middle;
+    text-align: center;
+}
+.tab .tabcontent.table ul li{
+    display: table-cell;
+    vertical-align: middle;
+    width: 25%;
+    word-break: break-all;
+}
+.tab .tabcontent.table ul.title .name, 
+.tab .tabcontent.table ul.title .number, 
+.tab .tabcontent.table ul.title .mode{
+    border-right: 1px solid #fff;
+}
+.tab .tabcontent.table ul.contents .name, 
+.tab .tabcontent.table ul.contents .number, 
+.tab .tabcontent.table ul.contents .mode {
+    border-right: 1px solid #D3E7A4;
+}
+.tab .tabcontent.table ul.contents {
+    border-top: 0;
+}
+.tab .tabcontent.table .title {
+    background: #D3E7A4;
+}

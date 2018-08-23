@@ -1,0 +1,82 @@
+.spzhanshi{
+    width: 1225px;
+}
+.spzhanshisec {
+    width: 280px;
+    height: 520px;
+    background-color: white;
+    margin: 0 26px 25px 0;
+    float: left;
+}
+.spzhanshiimgbox{
+    display: inline-block;
+    width: 260px;
+    height: 300px;
+    margin: 10px;
+    line-height: 300px;
+    text-align: center;
+}
+.spzhanshiimg{
+    max-width: 260px;
+    max-height: 300px;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+.secone{
+    width: 260px;
+    height: 160px;
+    margin: 15px 10px 20px;
+}
+.seconejg{
+    width: 260px;
+    color: #ff3333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.seconexq{
+    width: 260px;
+    height: 44px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 25px;
+    display: inline-block;
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    display: -moz-box;
+    -moz-line-clamp: 2;
+    -moz-box-orient: vertical;
+    cursor: pointer;
+}
+.seconemj{
+    display: inline-block;
+    width: 260px;
+    height: 20px;
+    color: #666666;
+    margin-bottom: 17px;
+    cursor: pointer;
+}
+.seconedz{
+    font-size: 16px;
+    color: #666666;
+}
+.span1{
+    display: inline-block;
+    width: 170px;
+    height: 16px;
+    text-align: left;
+    /* background-color: #ff3333; */
+    cursor: pointer;
+}
+.span2{
+    display: inline-block;
+    width: 80px;
+    height: 16px;
+    text-align: right;
+    /* background-color: aliceblue; */
+    cursor: pointer;
+}

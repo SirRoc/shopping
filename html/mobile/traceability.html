@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" viewport-fit="cover">
+  <title>中国好食材微商城</title>
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet"  type="text/css" href="css/traceability.css">
+</head>
+<body>
+    <header>
+        <div class="search">
+            <!-- <i class="icon-sao"></i> -->
+            <div class="searchcontent">
+                <input type="text" placeholder="请输入16位或22位真源码" id="content">
+                <i class="icon-search" id="search"></i>
+            </div>
+        </div>
+    </header>
+    <div class="publicity">
+        <div class="image">
+            <h2>关注农产品质量溯源</h2>
+            <div class="smallbg"></div>
+        </div>
+        <div class="recore"></div>
+    </div>
+    <div>
+        <div class="branner"></div>
+        <div class="icon-bg"></div>
+    </div>
+</body>
+<script>
+    let search = document.querySelector('#search');
+    search.onclick = function () {
+        let val = document.querySelector('#content').value
+        location.href = 'traceabilityDetail.html?search=' + val
+    }
+</script>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!--[if IE 8]>    <html class="no-js ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<!-- <html lang="en"> -->
+
+<head>
+    <title>供应大厅</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--[if lte IE 8]> 
+		 <noscript>
+		      <style>.html5-wrappers{display:none!important;}</style>
+		      <div class="ie-noscript-warning">您的浏览器禁用了脚本，请<a href="">查看这里</a>来启用脚本!或者<a href="/?noscript=1">继续访问</a>.
+		      </div>
+		 </noscript>
+	<![endif]-->
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="../css/commons.css">
+    <link rel="stylesheet" href="../css/subnav.css">
+    <link rel="stylesheet" href="../css/spzhanshi.css">
+    <link rel="stylesheet" href="../css/shaixuan.css">
+    <script src="../js/lib/jquery-1.11.3.min.js"></script>
+    <script src="../js/lib/es5-shim.min.js"></script>
+    <script src="../js/lib/es5-sham.min.js"></script>
+    <script src="../js/lib/json3.min.js"></script>
+    <script src="../js/lib/template-web.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/shaixuan.js"></script>
+</head>
+
+
+<body>
+    <!-- 头部 -->
+    <div class="header font16px">
+        <div class="personalcenter">
+            <div class="center">
+                <ul class="clearfix nologin" id="nologinstatus">
+                    <li>
+                        <a href="#">加入收藏</a>
+                    </li>
+                    <li class="after">
+                        <a href="#">帮助中心</a>
+                    </li>
+                    <li class="after">
+                        <a href="#">联系我们</a>
+                    </li>
+                    <li class="user">
+                        <a href="#" class="login" id="login">Hi, 请登陆</a>
+                        <a href="#" class="register">注册</a>
+                    </li>
+                </ul>
+                <ul class="loginsuccess" id="loginstatus">
+                    <div class="exit" id="extilogin">退出</div>
+                    <div class="joincollect">加入收藏</div>
+                    <div class="user">欢迎您,
+                        <span class="username">陈达到达到</span>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="brand clearfix">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="" alt="">
+                </a>
+            </div>
+            <div class="search">
+                <input type="text" class="searchcontent" placeholder="请输入关键词">
+                <div class="iconsearch">
+                    <i class="icon-search"></i>
+                </div>
+            </div>
+        </div>
+        <div class="menu font20px" id="menu">
+            <ul>
+                <li>
+                    <a href="../index.html">首页</a>
+                </li>
+                <li class="active">
+                    <a href="Supply.html">供应大厅</a>
+                </li>
+                <li>
+                    <a href="Purchasing.html">采购大厅</a>
+                </li>
+                <li>
+                    <a href="industryinformation.html">兴业资讯</a>
+                </li>
+                <li>
+                    <a href="traceability.html">农产品溯源</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 头部 End -->
+    <!-- 页面主体 -->
+    <div id="content" class="content">
+        <!-- 子导航 -->
+        <div class="subnav">
+            <ul>
+                <li class="subnavli allgoods">
+                    <a href="javascript:void(0)">
+                        <img class="iconimg iconimg1" src="../img/icon/icon_1_s.png" alt="">&nbsp;全部</a>
+                </li>
+                <li class="subnavli fruits">
+                    <a href="javascript:void(0)">
+                        <img class="iconimg iconimg2" src="../img/icon/icon_2_n.png" alt="">&nbsp;水果</a>
+                </li>
+                <li class="subnavli vegetables">
+                    <a href="javascript:void(0)">
+                        <img class="iconimg iconimg3" src="../img/icon/icon_3_n.png" alt="">&nbsp;蔬菜</a>
+                </li>
+                <li class="subnavli livestock">
+                    <a href="javascript:void(0)">
+                        <img class="iconimg iconimg4" src="../img/icon/icon_4_n.png" alt="">&nbsp;畜牧水产</a>
+                </li>
+                <li class="subnavli flour">
+                    <a href="javascript:void(0)">
+                        <img class="iconimg iconimg5" src="../img/icon/icon_5_n.png" alt="">&nbsp;粮油米面</a>
+                </li>
+                <li class="subnavli agricultural">
+                    <a href="javascript:void(0)">
+                        <img class="iconimg iconimg6" src="../img/icon/icon_6_n.png" alt="">&nbsp;农副加工</a>
+                </li>
+                <li class="subnavli flowers">
+                    <a href="javascript:void(0)">
+                        <img class="iconimg iconimg7" src="../img/icon/icon_7_n.png" alt="">&nbsp;苗木花草</a>
+                </li>
+                <li class="subnavli organic">
+                    <a href="javascript:void(0)">
+                        <img class="iconimg iconimg8" src="../img/icon/icon_8_n.png" alt="">&nbsp;农资有机</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 子导航 End -->
+        <!-- 筛选区 -->
+        <div class="shaixuan" id="shaixuan"></div>
+        <!-- 筛选区 End-->
+        <!-- 商品展示 -->
+        <div class="spzhanshi" id="spzhanshi"></div>
+
+        <!-- 清除浮动 -->
+        <div style="clear: both;"></div>
+        <!-- 商品展示 End -->
+
+        <!-- 页码 -->
+        <div class="paging">
+            <div id="page" class="page_div"></div>
+        </div>
+        <!-- 清除浮动 -->
+        <div style="clear: both;"></div>
+        <!-- 页码 End -->
+    </div>
+    <!-- 页面主体 End -->
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="server">
+            <div class="trademark">
+                <ul>
+                    <li>
+                        <div>
+                            <i class="icon-tree"></i>
+                            <div>
+                                <p>资源多</p>
+                                <p>海量信息免费发</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="icon-news"></i>
+                            <div>
+                                <p>资讯全</p>
+                                <p>最新资讯抢先看</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="icon-book"></i>
+                            <div>
+                                <p>农学堂</p>
+                                <p>最新技能免费学</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="icon-safety"></i>
+                            <div>
+                                <p>更安全</p>
+                                <p>实名认证更安心</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="guide">
+                <div class="new">
+                    <p>新手指南</p>
+                    <div>
+                        <a href="#">注册新用户</a>&nbsp;&nbsp;|&nbsp;
+                        <a href="#">实名认证</a>&nbsp;&nbsp;|&nbsp;
+                        <a href="#">找回密码</a>
+                    </div>
+                </div>
+                <div class="purchase">
+                    <p>采购商服务</p>
+                    <div>
+                        <a href="#">找采购</a>&nbsp;&nbsp;|&nbsp;
+                        <a href="#">发布采购</a>
+                    </div>
+                </div>
+                <div class="provision">
+                    <p>供应商服务</p>
+                    <div>
+                        <a href="#">找供应</a>&nbsp;&nbsp;|&nbsp;
+                        <a href="#">发布供应</a>
+                    </div>
+                </div>
+                <div class="transactionsafety ">
+                    <p>交易安全</p>
+                    <div>
+                        <a href="#">卖家防骗</a>&nbsp;&nbsp;|&nbsp;
+                        <a href="#">营销推广</a>&nbsp;&nbsp;|&nbsp;
+                        <a href="#">买家防骗</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 End -->
+
+    <script src="../js/common.js"></script>
+    <!-- 全部 -->
+    <script id="Allgoods" type="text/html">
+        {{each data item i}}
+        <div class="spzhanshisec">
+            <a class="spzhanshiimgbox" href="SupplyDetail.html">
+                <img class="spzhanshiimg" src="{{item.img}}" alt="">
+            </a>
+            <div class="secone">
+                <h3 class="seconejg">￥{{item.jiage}}</h3>
+                <p class="seconexq">
+                    {{item.peisong}}
+                </p>
+                <p class="seconemj">{{item.maijia}}</p>
+                <p class="seconedz">
+                    <span class="span1">{{item.dizhi}}</span>
+                    <span class="span2">{{item.time}}</span>
+                </p>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+    <!-- 水果 -->
+    <script id="Fruits" type="text/html">
+        <!-- {{success}} -->
+        {{if success}}
+        {{each data item i}}
+        <div class="shaixuan1 is-shaixuan">
+                <div class="fenleixx">
+                    <a href="javascript:void(0)" class="fenleixxa">
+                        <span class="flxxspan1">{{item.title}}</span>
+                        <span class="flxxspan2"></span>
+                    </a>
+                </div>
+                <ul class="shaixuanul">
+                    {{each item.list value index}}
+                    <li>
+                        <a href="javascript:void(0)">{{value}}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            {{/each}}
+        {{/if}}
+    </script>
+    
+    <script>
+        $(function () {
+            $("#page").paging({
+                pageNo: 1,
+                totalPage: 9,
+                totalSize: 300,
+                callback: function (num) {
+                    // 分页点击后返回的页面数
+                    console.log(num)
+                }
+            })
+            
+            // 全部 allgoods 初始化
+            $.ajax({
+                type: 'get',
+                url: 'https://www.easy-mock.com/mock/5b7660ee76a41b2c09dbf28e/example/',
+                success: function (data) {
+                    console.log(data)
+                    var html = template('Allgoods', data)
+                    $('#spzhanshi').html(html)
+                },
+
+            })
+            $('#shaixuan').css('border', 'none')
+            $('.allgoods').click(function () {
+                $.ajax({
+                    type: 'get',
+                    url: 'https://www.easy-mock.com/mock/5b7660ee76a41b2c09dbf28e/example/',
+                    success: function (data) {
+                        var html = template('Allgoods', data)
+                        $('#spzhanshi').html(html)
+                    },
+                })
+            })
+
+            // 水果 fruits
+            $('.fruits').click(function () {
+                $.ajax({
+                    type: 'get',
+                    url: 'https://www.easy-mock.com/mock/5b7660ee76a41b2c09dbf28e/example/shaixuan',
+                    success: function (data) {
+                        var html = template('Fruits', data)
+                        console.log(data)
+                        $('#shaixuan').html(html)
+
+        
+                        $('#shaixuan').find('.fenleixx').click(function () {
+                            var _this = $(this)
+                            if (_this.parent().hasClass('is-shaixuanok')) {
+                                _this.parent().removeClass('is-shaixuanok')
+                            }
+                            else {
+                                _this.parent().siblings().removeClass('is-shaixuanok')
+                                _this.parent().addClass("is-shaixuanok")
+                            }
+                        })
+                        $('#shaixuan').find('.shaixuanul li a').click(function () {
+                            $(this).parent().parent().find('a').removeClass('libgcolor')
+                            $(this).addClass('libgcolor')
+                        })
+                    },
+                })
+
+            })
+
+            
+            $('#spzhanshi').find('.spzhanshisec').find('.spzhanshiimgbox').click(function () {
+                // console.log($(this))
+                $(this).attr('src','html/xiangqing.html')
+            })
+        })
+    </script>
+
+
+
+</body>
+
+</html>

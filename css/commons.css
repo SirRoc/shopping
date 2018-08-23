@@ -1,0 +1,364 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* box-sizing: border-box; */
+    background-color: #f6f6f6;
+}
+*{
+    font-family:'Microsoft YaHei' ! important;
+}
+ul,a,li,p,h1,h2,h3,h4{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.header {
+    height: 200px;
+    width: 100%;
+    background: #fff;
+}
+.header .personalcenter {
+    width: 100%;
+    height: 44px;
+    background: #F3F3F3;
+}
+.header .personalcenter .center {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header .center li {
+    float: right;
+    width: 100px;
+    height: 44px;
+    text-align: center;
+    color: #999999;
+}
+.header .center li.after {
+
+}
+.header .center li.after::after {
+    content: '';
+    display: inline-block;
+    float: right;
+    width: 1px;
+    height: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: #999999;
+}
+.header .center li a {
+    height: 44px;
+    line-height: 44px;
+    text-decoration: none;
+    color: #999999;
+    font-size: inherit;
+}
+.header .center .user {
+    width: 150px;
+    margin-right: 20px;
+}
+.header .user .login {
+    color: #FF0000;
+    padding-right: 20px;
+} 
+.header .brand {
+    width: 1200px;
+    height: 120px;
+    margin: 0 auto
+}
+.header .brand .logo {
+    width: 200px;
+    height: 100%;
+    display: inline-block;
+    line-height: 2;
+    background: pink;
+}
+.header .brand .search {
+    float: right;
+    width: 900px;
+    height: 120px;
+    line-height: 120px;
+    position: relative;
+}
+.header .brand .search .searchcontent {
+    width: 800px;
+    height: 52px;
+    border: 1px solid #D3E7A4;
+    line-height: 54px;
+    text-indent: 10px;
+}
+.header .iconsearch {
+    display: inline-block;
+    width: 98px;
+    height: 120px;
+    position: absolute;
+    right: 0;
+    top: -1px;
+}
+.header .icon-search {
+    display: inline-block;
+    width: 98px;
+    height: 56px;
+    margin-top: 34px;
+    background: #D3E7A4 url('../images/icon/search.png') center center no-repeat;
+}
+.header .menu {
+    height: 36px;
+    width: 100%;
+    background: #809556;
+}
+.header .menu ul {
+    width: 1200px;
+    height: inherit;
+    margin: 0 auto;
+}
+.header .menu li {
+    float: left;
+    width: 160px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+}
+.header .menu li.active {
+    background: #ECF5D8;
+    color: #4F6F1F;
+}
+.header .menu li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+.header .menu li a:hover {
+    background: #ECF5D8;
+    color: #4F6F1F;
+}
+.header .loginsuccess {
+    height: 44px;
+    line-height: 44px;
+    color: #999999;
+    text-align: center;
+}
+.header .loginsuccess .exit {
+    position: relative;
+    float: right;
+    width: 100px;
+    height: 100%;
+}
+.header .loginsuccess {
+    display: none;
+}
+.header .loginsuccess .exit::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: url(../images/icon/borderexit.png) center center no-repeat;
+}
+.header .loginsuccess .joincollect {
+    position: relative;
+    float: right;
+    width: 120px;
+    height: 100%;
+}
+.header .loginsuccess .joincollect::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: url(../images/icon/bordercollect.png) center center no-repeat;
+}
+.header .loginsuccess .user {
+    position: relative;
+    float: right;
+    width: 200px;
+    height: 100%;
+}
+.header .loginsuccess .user::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: url(../images/icon/borderperson.png) center center no-repeat;
+}
+.header .loginsuccess .username {
+    vertical-align: bottom;
+    display: inline-block;
+    width: 64px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.footer {
+    height: 310px;
+    width: 100%;
+    background: #809556;
+    margin-top: 15px; 
+}
+.footer .server {
+    width: 1200px;
+    height: 160px;
+    margin: 0 auto;
+    color: #fff;
+}
+.footer ul {
+    width: 1200px;
+    height: 160px;
+}
+.footer .server li {
+    float: left;
+    width: 300px;
+    height: 160px;
+    line-height: 160px;
+    font-size: 24px;
+}
+.footer .server li > div {
+   display: inline-block;
+    width: 100%;
+   height: 160px;
+   line-height: 160px;
+   text-decoration: none;
+   color: #fff;
+}
+.footer .server li i {
+    display: inline-block;
+    float: left;
+    width: 80px;
+    height: 160px;
+   line-height: 160px;
+}
+.footer .icon-tree {
+    background: url(../images/icon/tree.png) center left no-repeat;
+}
+.footer .icon-news {
+    background: url(../images/icon/new.png) center left no-repeat;
+}
+.footer .icon-book {
+    background: url(../images/icon/book.png) center left no-repeat;
+}
+.footer .icon-safety {
+    background: url(../images/icon/safety.png) center left no-repeat;
+}
+.footer .server li div {
+    float: left;
+    height: 160px;
+   line-height: 128px;
+}
+.footer .server li p {
+    display: block;
+    height: 30px;
+}
+.footer .guide {
+    height: 70px;
+}
+.footer .guide p{
+   font-size: 24px;
+   color: #FAD94E;
+   padding-bottom: 20px;
+}
+.footer .guide a{
+   font-size: 18px;
+   text-decoration: none;
+   color: #fff;
+}
+.footer .guide > div {
+    display: inline-block;
+} 
+.footer .guide .new {
+    width: 300px;
+}
+.footer .guide .purchase {
+    width: 290px;
+}
+.footer .guide .purchase p, .footer .guide .purchase div{
+    padding-left: 74px;
+}
+.footer .guide .provision {
+    width: 280px;
+}
+.footer .guide .transactionsafety {
+    width: 300px;
+}
+
+/*分页*/
+.paging{
+    margin: 0 auto;
+    width: 880px;
+    height: 545px;
+    /* background-color: antiquewhite; */
+    position: relative;
+}
+.page_div {
+    /* width: 580px; */
+    font-size: 15px;
+    font-family: "microsoft yahei";
+    color: #666666;
+    box-sizing: border-box;
+    position: absolute;
+    top: 240px;
+    left: 15px;
+}
+/*
+ * 页数按钮样式
+ */
+.page_div a {
+    min-width: 40px;
+    height: 40px;
+    border: 1px solid #dce0e0!important;
+    text-align: center;
+    margin: 0 4px;
+    cursor: pointer;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+#firstPage,
+#lastPage {
+    width: 80px;
+    color: #000;
+    border: 1px solid #DDDDDD!important;
+}
+
+#page a:hover  {
+    background-color: #FAD94E;
+    color: #fff;
+}
+#prePage,
+#nextPage {
+    width: 70px;
+    color: #000;
+    border: 1px solid #DDDDDD!important;
+}
+
+.page_div .current {
+    background-color: #FAD94E;
+    border-color: #DDDDDD;
+    color: #FFFFFF;
+}
+
+.totalPages {
+    margin: 0 10px;
+}
+
+.totalPages span,
+.totalSize span {
+    color: #FAD94E;
+    margin: 0 5px;
+}
+
+.content{
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+}

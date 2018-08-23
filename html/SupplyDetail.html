@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<!--[if IE 8]>    <html class="no-js ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<!-- <html lang="en"> -->
+
+<head>
+    <title>详情页</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--[if lte IE 8]> 
+		 <noscript>
+		      <style>.html5-wrappers{display:none!important;}</style>
+		      <div class="ie-noscript-warning">您的浏览器禁用了脚本，请<a href="">查看这里</a>来启用脚本!或者<a href="/?noscript=1">继续访问</a>.
+		      </div>
+		 </noscript>
+	<![endif]-->
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="../css/spxinxi.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/lib/jquery-1.11.3.min.js"></script>
+    <script src="../js/lib/es5-shim.min.js"></script>
+    <script src="../js/lib/es5-sham.min.js"></script>
+    <script src="../js/lib/json3.min.js"></script>
+    <script src="../js/lib/template-web.js"></script>
+    <script src="../js/xiangqing.js"></script>
+    <script src="../js/fangda.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header font16px">
+        <div class="personalcenter">
+            <div class="center">
+                <ul class="clearfix nologin" id="nologinstatus">
+                    <li>
+                        <a href="#">加入收藏</a>
+                    </li>
+                    <li class="after">
+                        <a href="#">帮助中心</a>
+                    </li>
+                    <li class="after">
+                        <a href="#">联系我们</a>
+                    </li>
+                    <li class="user">
+                        <a href="#" class="login" id="login">Hi, 请登陆</a>
+                        <a href="#" class="register">注册</a>
+                    </li>
+                </ul>
+                <ul class="loginsuccess" id="loginstatus">
+                    <div class="exit" id="extilogin">退出</div>
+                    <div class="joincollect">加入收藏</div>
+                    <div class="user">欢迎您,
+                        <span class="username">陈达到达到</span>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="brand clearfix">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="" alt="">
+                </a>
+            </div>
+            <div class="search">
+                <input type="text" class="searchcontent" placeholder="请输入关键词">
+                <div class="iconsearch">
+                    <i class="icon-search"></i>
+                </div>
+            </div>
+        </div>
+        <div class="menu font20px" id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li class="active">
+                    <a href="index.html">供应大厅</a>
+                </li>
+                <li>
+                    <a href="index.html">采购大厅</a>
+                </li>
+                <li>
+                    <a href="index.html">兴业资讯</a>
+                </li>
+                <li>
+                    <a href="index.html">农产品溯源</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 头部 End -->
+
+    <!-- 详情页主体部分  -->
+    <div id="content" class="content">
+        <!-- 信息部分 -->
+        <div id="Spxinxi" class="spxinxi">
+            <!-- 图片展示部分 -->
+            <div class="spxinxi1">
+                <div class="tpxinxi">
+                    <!-- <div class="jqzoom"></div> -->
+                    <div class="tpxinxibig" id="tpxinxibig">
+                        <img src="../img/icon/tc8.png" alt="">
+                    </div>
+                    <div class="tpxinxismall">
+                        <div class="smallimgbox">
+                            <img src="../img/icon/tc8.png" alt="" data-src="">
+                        </div>
+                        <div class="smallimgbox">
+                            <img src="../img/icon/tc3.png" alt="" data-src="">
+                        </div>
+                        <div class="smallimgbox">
+                            <img src="../img/icon/tc6.png" alt="" data-src="">
+                        </div>
+                        <div class="smallimgbox">
+                            <img src="../img/icon/tc3.png" alt="" data-src="">
+                        </div>
+                        <div class="smallimgbox">
+                            <img src="../img/icon/tc8.png" alt="" data-src="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 图片展示部分 End -->
+
+            <!-- 商品介绍部分 -->
+            <div class="spxinxi2">
+                <div class="shangpinxq1">
+                    <p>花牛苹果 光果 全红 70mm以上</p>
+                </div>
+                <div class="shangpinxq2">
+                    <p>
+                        <span class="spancolor1" style="width: 100px;">更新时间</span>
+                        <span class="gengxinsj" style="width:360px;">
+                            <span class="spancolor2">2018-08-09</span>&emsp;
+                            <span class="spancolor2">10:10:12</span>
+                        </span>
+                        <span class="spancolor1" style="width:90px;">查看人数</span>
+                        <span class="spancolor3 chkanrs">2356</span>
+                        </span>
+                    </p>
+                    <p>
+                        <span class="spancolor1" style="width: 100px;">发货地</span>
+                        <span class="spancolor2 fahuodz" style="width:360px;">甘肃 陇南 礼县</span>
+                        <span class="spancolor1" style="width:90px;">咨询人数</span>
+                        <span class="spancolor3 zixunrs">1230</span>
+                        </span>
+                    </p>
+                </div>
+                <div class="shangpinxq3">
+                    <p>
+                        <span class="spancolor1" style="width: 100px;">价格</span>
+                        <span class="spancolor3  spjiage" style="font-size: 24px; color: #ff0000; width: 80px;">￥5.00</span>
+                        <span class="spancolor2" style="width: 450px;">元/斤 100斤起批</span>
+                    </p>
+                    <p>
+                        <span class="spancolor1" style="width: 100px;">运费</span>
+                        <span class="spancolor2">参考价中不包含运费，交易前请先和卖家确认好运输方式和运费。</span>
+                    </p>
+                </div>
+                <div class="shangpinxq4">
+                    <div class="ljgt">
+                        <img src="../img/icon/call.png" alt="">
+                        <a href="">立即沟通</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 商品介绍部分 End -->
+        </div>
+        <!-- 清除浮动 -->
+        <div style="clear: both;"></div>
+        <!-- 信息部分 End -->
+
+
+        <!-- 详情部分 -->
+        <div class="spxiangqing">
+            <!-- tab切换部分 -->
+            <div class="spxiangqing1">
+                <div class="xiangxixx tabdiv tabcolor" id="xiangxi">
+                    <span>详细信息</span>
+                </div>
+                <div class="yongyaoxx tabdiv" id="yongyao">
+                    <span>用药信息</span>
+                </div>
+                <div class="shifeixx tabdiv" id="shifei">
+                    <span>施肥信息</span>
+                </div>
+            </div>
+            <!-- 清除浮动 -->
+            <div style="clear: both;"></div>
+            <!-- tab切换部分 End -->
+
+            <!-- tab切换内容部分 -->
+            <div class="spxiangqing2">
+                <!-- 详细信息部分 -->
+                <div id="Xiangxi" class="xiangxizs xinxifl">
+                </div>
+                <!-- 详细信息部分 End -->
+
+                <!-- 用药信息部分 -->
+                <div id="Yongyao" class="yongyaozs xinxifl">
+                </div>
+                <!-- 用药信息部分 End -->
+
+                <!-- 施肥信息部分 -->
+                <div id="Shifei" class="shifeizs xinxifl">
+                </div>
+                <!-- 施肥信息部分 End -->
+            </div>
+            <!-- tab切换内容部分 End-->
+        </div>
+        <!-- 详情部分 End -->
+    </div>
+    <!-- 详情页主体部分 End -->
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="server">
+            <div class="trademark">
+                <ul>
+                    <li>
+                        <div>
+                            <i class="icon-tree"></i>
+                            <div>
+                                <p>资源多</p>
+                                <p>海量信息免费发</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="icon-news"></i>
+                            <div>
+                                <p>资讯全</p>
+                                <p>最新资讯抢先看</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="icon-book"></i>
+                            <div>
+                                <p>农学堂</p>
+                                <p>最新技能免费学</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="icon-safety"></i>
+                            <div>
+                                <p>更安全</p>
+                                <p>实名认证更安心</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="guide">
+                <div class="new">
+                    <p>新手指南</p>
+                    <div>
+                        <a href="#">注册新用户</a>&nbsp;&nbsp;|&nbsp;
+                        <a href="#">实名认证</a>&nbsp;&nbsp;|&nbsp;
+                        <a href="#">找回密码</a>
+                    </div>
+                </div>
+                <div class="purchase">
+                    <p>采购商服务</p>
+                    <div>
+                        <a href="#">找采购</a>&nbsp;&nbsp;|&nbsp;
+                        <a href="#">发布采购</a>
+                    </div>
+                </div>
+                <div class="provision">
+                    <p>供应商服务</p>
+                    <div>
+                        <a href="#">找供应</a>&nbsp;&nbsp;|&nbsp;
+                        <a href="#">发布供应</a>
+                    </div>
+                </div>
+                <div class="transactionsafety ">
+                    <p>交易安全</p>
+                    <div>
+                        <a href="#">卖家防骗</a>&nbsp;&nbsp;|&nbsp;
+                        <a href="#">营销推广</a>&nbsp;&nbsp;|&nbsp;
+                        <a href="#">买家防骗</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 End -->
+
+    
+    <!-- 信息部分 -->
+    <script id="TSpxinxi" type="text/html">
+                <!-- 图片展示部分 -->
+                <div class="spxinxi1">
+                    <div class="tpxinxi">
+                        <!-- <div class="jqzoom"></div> -->
+                        <div class="tpxinxibig" id="tpxinxibig">
+                            <img src="{{imgurl.bigimg}}" alt="">
+                        </div>
+                        <div class="tpxinxismall">
+                        <div class="smallimgbox">
+                            <img src="{{imgurl.smallimg}}" alt="" data-src="{{imgurl.bigimg}}">
+                        </div>
+                        <div class="smallimgbox">
+                            <img src="{{imgurl.smallimg}}" alt="" data-src="{{imgurl.bigimg}}">
+                        </div>
+                        <div class="smallimgbox">
+                            <img src="{{imgurl.smallimg}}" alt="" data-src="{{imgurl.bigimg}}">
+                        </div>
+                        <div class="smallimgbox">
+                            <img src="{{imgurl.smallimg}}" alt="" data-src="{{imgurl.bigimg}}">
+                        </div>
+                        <div class="smallimgbox">
+                            <img src="{{imgurl.smallimg}}" alt="" data-src="{{imgurl.bigimg}}">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 图片展示部分 End -->
+
+                <!-- 商品介绍部分 -->
+                <div class="spxinxi2">
+                    <div class="shangpinxq1">
+                        <p>{{informat.breed}} {{informat.stockpile}} {{informat.color}} {{informat.guojing}}</p>
+                    </div>
+                    <div class="shangpinxq2">
+                        <p>
+                            <span class="spancolor1" style="width: 100px;">更新时间</span>
+                            <span class="gengxinsj" style="width:360px;">
+                                <span class="spancolor2">{{particulars.date}}</span>&emsp;
+                                <span class="spancolor2">{{particulars.time}}</span>
+                            </span>
+                            <span class="spancolor1" style="width:90px;">查看人数</span>
+                            <span class="spancolor3 chkanrs">{{particulars.lookpeople}}</span>
+                            </span>
+                        </p>
+                        <p>
+                            <span class="spancolor1" style="width: 100px;">发货地</span>
+                            <span class="spancolor2 fahuodz" style="width:360px;">{{particulars.address}}</span>
+                            <span class="spancolor1" style="width:90px;">咨询人数</span>
+                            <span class="spancolor3 zixunrs">{{particulars.consultpeople}}</span>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="shangpinxq3">
+                        <p>
+                            <span class="spancolor1" style="width: 100px;">价格</span>
+                            <span class="spancolor3  spjiage" style="font-size: 24px; color: #ff0000; width: 80px;">￥{{particulars.price}}</span>
+                            <span class="spancolor2" style="width: 450px;">元/斤 {{particulars.lessweight}}斤起批</span>
+                        </p>
+                        <p>
+                            <span class="spancolor1" style="width: 100px;">运费</span>
+                            <span class="spancolor2">参考价中不包含运费，交易前请先和卖家确认好运输方式和运费。</span>
+                        </p>
+                    </div>
+                    <div class="shangpinxq4">
+                        <div class="ljgt">
+                            <img src="../img/icon/call.png" alt="">
+                            <a href="">立即沟通</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 商品介绍部分 End -->
+    </script>
+
+    <!-- 详细信息 -->
+    <script id="TXiangxi" type="text/html">
+        {{if success}}
+        <div class="xiangxizs1">
+                <div class="xxxijie">
+                    <div class="xxxijie1">
+                        <p class="xijiep">
+                            <span class="xijiespan1">品种:</span>
+                            <span class="xijiespan2">{{informat.breed}}</span>
+                        </p>
+                        <p class="xijiep">
+                            <span class="xijiespan1 marspan">是否套装:</span>
+                            <span class="xijiespan2">{{informat.yesorno}}</span>
+                        </p>
+                        <p class="xijiep">
+                            <span class="xijiespan1">果型:</span>
+                            <span class="xijiespan2">{{informat.guoxing}}</span>
+                        </p>
+                    </div>
+                    <div class="xxxijie2">
+                        <p class="xijiep">
+                            <span class="xijiespan1">果径:</span>
+                            <span class="xijiespan2">{{informat.guojing}}</span>
+                        </p>
+                        <p class="xijiep">
+                            <span class="xijiespan1 marspan">货品包装:</span>
+                            <span class="xijiespan2">{{informat.baozhuang}}</span>
+                        </p>
+                        <p class="xijiep">
+                            <span class="xijiespan1">单重量:</span>
+                            <span class="xijiespan2">{{informat.weight}}</span>
+                        </p>
+                    </div>
+                    <div class="xxxijie3">
+                        <p class="xijiep">
+                            <span class="xijiespan1">颜色:</span>
+                            <span class="xijiespan2">{{informat.color}}</span>
+                        </p>
+                        <p class="xijiep">
+                            <span class="xijiespan1 marspan">是否贴字:</span>
+                            <span class="xijiespan2">{{informat.tiezi}}</span>
+                        </p>
+                        <p class="xijiep">
+                            <span class="xijiespan1">储存方式:</span>
+                            <span class="xijiespan2">{{informat.stockpile}}</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="xiangxizs2">
+                <img src="{{informat.img}}" alt="">
+            </div>
+            {{/if}}
+    </script>
+    <!-- 用药信息 -->
+    <script id="TYongyao" type="text/html">
+        {{if success}}
+
+                    <div class="yongyaodiv">
+                        <div class="yjmc biaotidiv">药剂名称</div>
+                        <div class="yysl biaotidiv">用药数量(公斤/亩)</div>
+                        <div class="yyfs biaotidiv">用药方式</div>
+                        <div class="yyrq biaotidiv">用药日期</div>
+                    </div>
+                        
+                    <table class="yongyaotab">
+                            {{each tabs.manure item index}}
+                        <tr>
+                            <td class="yjmctd">{{item.name}}</td>
+                            <td class="yysltd">{{item.number}}</td>
+                            <td class="yyfstd">{{item.mode}}</td>
+                            <td class="yyrqtd">{{item.date}}</td>
+                        </tr>
+                        {{/each}}
+                    </table>
+        {{/if}}
+    </script>
+    <!-- 施肥信息 -->
+    <script id="TShifei" type="text/html">
+        {{if success}}
+
+                    <div class="yongyaodiv">
+                        <div class="yjmc biaotidiv">肥料名称</div>
+                        <div class="yysl biaotidiv">施肥数量(公斤/亩)</div>
+                        <div class="yyfs biaotidiv">施肥方式</div>
+                        <div class="yyrq biaotidiv">施肥日期</div>
+                    </div>
+                        
+                    <table class="yongyaotab">
+                            {{each tabs.medicine item index}}
+                        <tr>
+                            <td class="yjmctd">{{item.name}}</td>
+                            <td class="yysltd">{{item.number}}</td>
+                            <td class="yyfstd">{{item.mode}}</td>
+                            <td class="yyrqtd">{{item.date}}</td>
+                        </tr>
+                        {{/each}}
+                    </table>
+        {{/if}}
+    </script>
+    <script>
+        $(function () {
+            
+            // 允许iE8跨域请求,必须加,不加导致ajax失败
+            jQuery.support.cors = true;
+            // 详细信息
+            //  初始化
+            $.ajax({
+                type: 'get',
+                url: 'https://www.easy-mock.com/mock/5b7660ee76a41b2c09dbf28e/example/shaixuan',
+                success: function (data) {
+                    console.log(data)
+                    var handhtml = template('TSpxinxi',data) // 图片放大
+                    $('#Spxinxi').html(handhtml)
+                    var html = template('TXiangxi', data) // 详细
+                    $('#Xiangxi').html(html)
+                    // 实例化移入放大图片方法
+
+                    $("#tpxinxibig").jqueryzoom({
+                        xzoom: 530, //放大图的宽度(默认是 200)
+                        yzoom: 530, //放大图的高度(默认是 200)
+                        offset: 10, //离原图的距离(默认是 10)
+                        zoomType: 'reverse',
+                        position: "right", //放大图的定位(默认是 "right")
+                        preload: 4
+                    });
+                }
+            })
+            $('#xiangxi').click(function () {
+                $.ajax({
+                    type: 'get',
+                    url: 'https://www.easy-mock.com/mock/5b7660ee76a41b2c09dbf28e/example/shaixuan',
+                    success: function (data) {
+                        console.log(data)
+                        var html = template('TXiangxi', data)
+                        $('#Xiangxi').html(html)
+                    }
+                })
+            })
+            // 用药信息
+            $('#yongyao').click(function () {
+                $.ajax({
+                    type: 'get',
+                    url: 'https://www.easy-mock.com/mock/5b763234f989ec12eb03db9c/traceabilityDetail',
+                    success: function (data) {
+                        console.log(data)
+                        var html = template('TYongyao', data)
+
+                        $('#Yongyao').html(html)
+                    }
+                })
+            })
+            // 施肥信息
+            $('#shifei').click(function () {
+                $.ajax({
+                    type: 'get',
+                    url: 'https://www.easy-mock.com/mock/5b763234f989ec12eb03db9c/traceabilityDetail',
+                    success: function (data) {
+                        var html = template('TShifei', data)
+                        $('#Shifei').html(html)
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

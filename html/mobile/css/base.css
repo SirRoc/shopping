@@ -1,0 +1,158 @@
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, font, img,
+ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+center, u, b, i {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    text-decoration: none
+}
+html {
+  touch-action: manipulation; /* 解决移动端快速点击300ms延迟问题 */
+}
+html, body {
+  height: 100%;
+}
+body {
+    line-height: 1;
+    background:#F3F2F7;
+    padding-top: constant(safe-area-inset-top);
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+}
+input{
+    outline: none;
+    paddingVertical: 0; /*安卓显示不全*/
+}
+:focus {
+    outline: 0
+}
+ol, ul {
+    list-style: none
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: ""
+}
+blockquote, q {
+    quotes: ""
+}
+*{
+  -webkit-touch-callout:none;  /*系统默认菜单被禁用*/
+  -webkit-user-select:none; /*webkit浏览器*/
+  -khtml-user-select:none; /*早期浏览器*/
+  -moz-user-select:none;/*火狐*/
+  -ms-user-select:none; /*IE10*/
+  user-select:none;
+  -webkit-tap-highlight-color: transparent;
+}
+input, textarea {
+  margin: 0;
+  padding: 0;
+}
+input {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: auto;
+  -moz-user-focus: auto;
+  -moz-user-select: auto;
+  -webkit-appearance:none;
+}
+textarea {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: auto;
+  -moz-user-focus: auto;
+  -moz-user-select: auto;
+  -webkit-appearance:none;
+  box-sizing: border-box; /* 防止溢出 */
+}
+hr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #000;
+    background-color: #000;
+    height: 1px
+}
+a {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+  -moz-user-focus: none;
+  -moz-user-select: none;
+  -webkit-appearance:none;
+}
+/* commom */
+.bg-secondary {
+    background: #F3F2F7;
+}
+.bg-danger {
+    background: #F73C43;
+    color: #fff;
+}
+.bg-primary {
+    background: #00AEFF;
+    color: #fff;
+}
+.bg-success {
+    background: #AEDE31;
+}
+.inputright {
+  border: 1px solid #4CAF50;
+}
+.inputerr {
+  border: 1px solid #f40606;
+}
+.text-secondary {
+	color: #707070;
+}
+
+.font12px {
+  font-size: 12px;
+}
+
+.font14px {
+  font-size: 14px;
+}
+.toast {
+  position: absolute;
+  left: 50%;
+  bottom: 65px;
+  width: 120px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 6px;
+  transform: translate(-50%,0);
+  text-align: center;
+  font-size: 12px;
+  background: #000000;
+  color: #fff;
+  opacity: 0.5;
+}
+/* tab */
+.setstyle {
+  font-size: 14px;
+  color: #707070;
+}
+.setstyle.mint-navbar .mint-tab-item.is-selected {
+  border-bottom: 3px solid #f73c43;
+  color: #3B3B3B;
+  font-weight: bold;
+}
+.setstyle.mint-navbar .mint-tab-item-label {
+  font-size: 16px;
+}
