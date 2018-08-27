@@ -96,6 +96,67 @@
         <div class="idea">
         </div>
     </div>
+    <div class="content1" id="content1">
+        <div class="detail">
+            <div class="info">
+                <div>
+                    <div class="left">
+                        <p>主体名称</p>
+                        <p>单位地址</p>
+                        <p>主体性质</p>
+                        <p>负责人</p>
+                        <p>手机号码</p>
+                        <p>信息员</p>
+                        <p>手机号码</p>
+                        <p>电子邮箱</p>
+                    </div>
+                    <div class="left1"  id="maininfo">
+                        <p>福建超大现代农业集团有限公司</p>
+                        <p>福建福州鼓楼区铜盘路29号超大大厦</p>
+                        <p>省级以上龙头企业</p>
+                        <p>李生</p>
+                        <p>18500000000</p>
+                        <p>郭涛</p>
+                        <p>18500000000</p>
+                        <p>taoch@163.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab">
+                <ul id="tabs">
+                    <li class="active"><a href="#" title="产品信息">产品信息</a></li>
+                    <li><a href="#" title="用药信息">用药信息</a></li>
+                    <li><a href="#" title="施肥信息">施肥信息</a></li>
+                    <li><a href="#" title="农事活动">农事活动</a></li>
+                    <li><a href="#" title="采收信息">采收信息</a></li>
+                    <li><a href="#" title="检测情况">检测情况</a></li>
+                </ul>
+                <div id="tabcontent">
+                    <div id="产品信息" class="productinfo">
+                        <ul class="left" >
+                            <p>产业类型</p>
+                            <p>产品名称</p>
+                            <p>生产基地</p>
+                            <p>播种时间</p>
+                            <p>播种面积</p>
+                            <p>产品认证时间</p>
+                            <p>认证有效期</p>
+                        </ul>
+					</div>
+                    <div id="用药信息">
+                    </div>
+                    <div id="施肥信息">
+					</div>
+                    <div id="农事活动">
+					</div>
+                    <div id="采收信息">
+					</div>
+                    <div id="检测情况">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 	<div class="footer">
 		<div class="server">
 			<div class="trademark">
@@ -174,13 +235,174 @@
 	</div>
 	<script src="../js/lib/jquery-1.11.3.min.js"></script> -->
 	<script src="../js/common.js"></script>
-    <script>
-        $(function () {
-            $('#search').click(function () {
-			   location.href="traceabilityDetail.html?searchcontent="+$('#searchval').val() // 搜索值
-            })
-        })
+	    <script id="Tmaininfo" type="text/html">
+    {{if success}}
+        <div class="left1">
+            <p>{{maincontainer.name}}</p>
+            <p>{{maincontainer.address}}</p>
+            <p>{{maincontainer.nature}}</p>
+            <p>{{maincontainer.person}}</p>
+            <p>{{maincontainer.phone}}</p>
+            <p>{{maincontainer.infoperson}}</p>
+            <p>{{maincontainer.infophone}}</p>
+            <p>{{maincontainer.email}}</p>
+        </div>
+    {{/if}}
     </script>
+    <script id="Ttabcontent" type="text/html">
+        {{if success}} 
+            <div id="产品信息" class="productinfo">
+                <ul class="left" >
+                    <p>产业类型</p>
+                    <p>产品名称</p>
+                    <p>生产基地</p>
+                    <p>播种时间</p>
+                    <p>播种面积</p>
+                    <p>产品认证时间</p>
+                    <p>认证有效期</p>
+                </ul>
+                <ul class="left1">
+                    <p>{{tabs.productinfo.type}}</p>
+                    <p>{{tabs.productinfo.name}}</p>
+                    <p>{{tabs.productinfo.address}}</p>
+                    <p>{{tabs.productinfo.startTime | date}}</p>
+                    <p>{{tabs.productinfo.size}}</p>
+                    <p>{{tabs.productinfo.productAtuhTime | date}}</p>
+                    <p>{{tabs.productinfo.AtuhValid | date}}</p>
+                </ul>
+            </div>
+            <div id="用药信息">
+                <ul>
+                    <li class="header">
+                        <p class="name">农药名称</p>
+                        <p class="number">用药数量（毫升/亩）</p>
+                        <p class="mode">用药方式</p>
+                        <p class="date">用药日期</p>
+                    </li>
+                    {{each tabs.medicine item index}}
+                    <li>
+                        <p class="name">{{item.name}}</p>
+                        <p class="number">{{item.number}}</p>
+                        <p class="mode">{{item.mode}}</p>
+                        <p class="date">{{item.date | date}}</p>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div id="施肥信息">
+                <ul>
+                    <li class="header">
+                        <p class="name">肥料名称</p>
+                        <p class="number">施肥数量（公斤/亩）</p>
+                        <p class="mode">施肥方式</p>
+                        <p class="date">施肥日期</p>
+                    </li>
+                    {{each tabs.manure item index}}
+                    <li>
+                        <p class="name">{{item.name}}</p>
+                        <p class="number">{{item.number}}</p>
+                        <p class="mode">{{item.mode}}</p>
+                        <p class="date">{{item.date | date}}</p>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div id="农事活动">
+                <ul>
+                    <li class="header">
+                        <p class="name">农事活动项目</p>
+                        <p class="number">具体内容（写明具体方法）</p>
+                        <p class="date">日期</p>
+                    </li>
+                    {{each tabs.Farmingactivities item index}}
+                    <li>
+                        <p class="name">{{item.mode}}</p>
+                        <p class="number">{{item.content | modes: '{x:1,y:2}'}}</p>
+                        <p class="date">{{item.date | date}}</p>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div id="采收信息">
+                <ul>
+                    <li class="header">
+                        <p class="name">数量（公斤）</p>
+                        <p class="date">采收日期</p>
+                    </li>
+                    {{each tabs.recovery item index}}
+                    <li>
+                        <p class="name">{{item.number}}</p>
+                        <p class="date">{{item.date | date}}</p>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div id="检测情况">
+                <ul>
+                    <li class="header">
+                        <p class="name">检测方式</p>
+                        <p class="number">检测项目</p>
+                        <p class="mode">检测结果</p>
+                        <p class="date">检测时间</p>
+                    </li>
+                    {{each tabs.detectionmode item index}}
+                    <li>
+                        <p class="name">{{item.mode}}</p>
+                        <p class="number">{{item.item}}</p>
+                        <p class="mode">{{item.result}}</p>
+                        <p class="date">{{item.date | date}}</p>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        {{/if}}
+    </script>
+    <script>
+        $(function() {
+           	// 搜索
+        	 $('#search').click(function () {
+			   // $('#searchval').val() // 搜索值
+
+			   // 点击显示搜索内容
+			   $('#content1').css({'display': 'block'})
+			   // 搜索数据配置
+	            $.ajax({
+	                type: 'get',
+	                url: 'https://www.easy-mock.com/mock/5b763234f989ec12eb03db9c/traceabilityDetail',
+	                success: function (date) {
+	                    var html = template('Tmaininfo', date)
+	                    $('#maininfo').html(html)
+	                }
+	            })
+	            $.ajax({
+	                type: 'get',
+	                url: 'https://www.easy-mock.com/mock/5b763234f989ec12eb03db9c/traceabilityDetail',
+	                success: function (date) {
+	                    var html = template('Ttabcontent', date);
+	                    $('#tabcontent').html(html)
+
+	                     // tab 栏
+	                    $('#tabs li').click(function () {
+	                        $(this).addClass('active').siblings().removeClass('active')
+	                    })
+	                    $("#tabcontent div").hide(); 
+	                    $("#tabs li").attr("id","current"); 
+	                    $("#tabcontent div:first").fadeIn(); 
+	                    $('#tabs a').click(function(e) {
+	                        e.preventDefault();        
+	                        $("#tabcontent div").hide();
+	                        $("#tabs li").attr("id","");
+	                        $(this).parent().attr("id","current"); 
+	                        $('#' + $(this).attr('title')).fadeIn();
+	                    });
+	                        }
+	                    })
+	            })
+            
+        })
+</script>
+
+
 
 
  </body>
